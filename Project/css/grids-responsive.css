@@ -1,5 +1,9 @@
 /* >= 0 XS */
 @media screen and (min-width:0) {
+  .menu {
+    height: 92px;
+  }
+
   .menu-header {
     display: block;
   }
@@ -16,7 +20,7 @@
   .menu-header .active {
     transition: transform 0.3s ease;
     transform: scaleY(1);
-    opacity: 1
+    opacity: 1;
   }
   .menu-header li {
     text-align: center;
@@ -25,14 +29,12 @@
     border-bottom: 1px solid black;
     display: block;
     width: 100vw;
-    background-color:white;
+    background-color: rgba(255,255,255,1);
   }
   .menu-header li:first-child {
     border-top: 1px solid black;
   }
-  .menu {
-    height: 105px;
-  }
+
   #logo {
     position: static;
     float: right;
@@ -54,12 +56,13 @@
   }
   .menu-button {
     display: inline-block;
+    position: absolute;
   }
   video, audio, canvas {
     display: none;
     volume: 0;
   }
-  .hero {
+  header {
     height: 100vh;
     width: 100vw;
   }
@@ -67,6 +70,10 @@
 
 /* >= 568 SM */
 @media screen and (min-width:35.5em) {
+  .menu {
+    height: 103px;
+  }
+
   #logo {
     position: absolute;
     left: 50%;
@@ -76,7 +83,7 @@
   .menu-top ul {
     display: flex;
   }
-  .hero {
+  header {
     height: 50vh;
   }
 }
@@ -98,7 +105,7 @@
     position: absolute;
     left: 50%;
     margin-top: 40px;
-    margin-left: -276.875px;
+    margin-left: -321.203px;
     transform: scaleY(1);
     opacity: 1;
   }
@@ -116,6 +123,17 @@
   }
   .menu-header .hor > li {
     display: inline-block;
+  }
+  ul.drop-menu {
+    margin-left: -273.5px;
+    margin-top: -3px;
+  }
+  ul.drop-menu li  {
+    height: 20px;
+    background-color: #FFF;
+    padding-top: 10px;
+    padding-left: 11.5px;
+
   }
 
 
@@ -151,6 +169,33 @@
   .menu-button {
     display: none;
   }
+
+  .hero-content p {
+    font-family: "Didot", serif;
+    font-size: 120px;
+    height: auto;
+    width: 110%;
+    color: black;
+    padding-top: 34px;
+    padding-bottom: 37px;
+    text-indent: 0;
+    line-height: 50px;
+  }
+
+  .hero-content i {
+    line-height: 17px;
+    font-size: 50px;
+  }
+  svg {
+    width: 445px;
+  }
+  #line1 {
+    transform: translateX(-33px);
+  }
+  #line2 {
+    width: 310px;
+  }
+
 }
 
 /* >= 1024 LG */
@@ -158,22 +203,35 @@
   video, audio, canvas {
     display: inline-block;
   }
-  .hero {
+
+  header {
     height: 60vh;
 
   }
-}
-ul.drop-menu {
-  margin-left: -231px;
-  margin-top: -3px;
-}
-ul.drop-menu li  {
-  height: 20px;
-  background-color: #FFF;
-  padding-top: 10px;
-  padding-left: 11.5px;
+  .hero-content p {
+    font-size: 140px;
+    padding-top: 34px;
+    padding-bottom: 37px;
+    line-height: 70px;
+  }
+
+  .hero-content i {
+    line-height: 25px;
+    font-size: 60px;
+
+  }
+  svg {
+    width: 515px;
+  }
+  #line1 {
+    transform: translateX(-13px);
+  }
+  #line2 {
+    width: 380px;
+  }
 
 }
+
 
 /* >= 1280 XL */
 @media screen and (min-width:80em) {
@@ -182,18 +240,40 @@ ul.drop-menu li  {
   }
   .menu-header > ul {
     margin-top: 38px;
-    margin-left: -334.469px;
+    margin-left: -374.1095px;
   }
   ul.drop-menu li  {
     width: auto;
   }
   ul.drop-menu {
-    margin-left: -269px;
+    margin-left: -316px;
     margin-top: -3px;
   }
 
-  .hero {
+  header {
     height: 70vh;
 
+  }
+
+  .hero-content p {
+
+    font-size: 160px;
+    padding-top: 40px;
+    padding-bottom: 43px;
+    line-height: 70px;
+  }
+
+  .hero-content i {
+    line-height: 30px;
+    font-size: 70px;
+  }
+  svg{
+    width: 565px;
+  }
+  #line1 {
+    transform: translateX(0);
+  }
+  #line2 {
+    width: 430px;
   }
 }
