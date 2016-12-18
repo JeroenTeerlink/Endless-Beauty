@@ -65,10 +65,52 @@
   header {
     height: 100vh;
     width: 100vw;
+    justify-content: top;
+    overflow: hidden;
+    background-color: #DDD;
+    background-image: url("http://f.ptcdn.info/767/007/000/1375063804-CO102-o.jpg");
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 8vw;
+  }
+  .hero-content p {
+    font-family: "Didot", serif;
+    font-size: 100px;
+    height: auto;
+    width: 110%;
+    color: black;
+    padding-top: 34px;
+    padding-bottom: 37px;
+    text-indent: 0;
+    line-height: 50px;
+  }
+
+  .hero-content i {
+    line-height: 17px;
+    font-size: 45px;
+    font-style: normal;
+  }
+  #line1 {
+    display: none;
+  }
+  #line2 {
+    display: none;
   }
 }
 
 /* >= 568 SM */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8vw;
+}
 @media screen and (min-width:35.5em) {
   .menu {
     height: 103px;
@@ -84,8 +126,22 @@
     display: flex;
   }
   header {
-    height: 50vh;
+    height: 450px;
+    display: flex;
+    background-size: auto 450px;
   }
+  svg {
+    width: 400px;
+  }
+  #line1 {
+    display: block;
+    transform: translateX(-33px);
+  }
+  #line2 {
+    display: block;
+    width: 265px;
+  }
+
 }
 
 /* >= 768 MD */
@@ -169,6 +225,10 @@
   .menu-button {
     display: none;
   }
+  header {
+    height: 500px;
+    background-size: 100vw 500px;
+  }
 
   .hero-content p {
     font-family: "Didot", serif;
@@ -205,8 +265,8 @@
   }
 
   header {
-    height: 60vh;
-
+    height: 550px;
+    background-size: 100vw 550px;
   }
   .hero-content p {
     font-size: 140px;
@@ -251,8 +311,8 @@
   }
 
   header {
-    height: 70vh;
-
+    height: 700px;
+    background-size: 100vw 700px;
   }
 
   .hero-content p {
