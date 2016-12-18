@@ -13,6 +13,8 @@ html, body {
 }
 /* menu */
 .menu {
+  z-index: 100000;
+  position: absolute;
   background-color: #FFF;
   height: 170px;
   width: 100%;
@@ -90,6 +92,7 @@ ul.drop-menu li:last-child {
 }
 
 .container {
+  margin-top: 170px;
   height: 300vh;
   width: 100vw;
   background-color: #EEE;

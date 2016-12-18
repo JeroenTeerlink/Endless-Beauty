@@ -2,11 +2,13 @@ $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
 
-  $('.hero-content').css({
+  if ($(this).width() > 568) {
+    $('.hero-content').css({
 
     'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
 
-  });
+    });
+  }
 
   if(wScroll >  $('.second-section').offset().top - ($(window).height() / 2)) {
     console.log('hi');

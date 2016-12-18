@@ -112,6 +112,10 @@
   .second-section {
     background: url("../images/second-section-image.jpeg");
     background-size: cover;
+    background-position: center;
+  }
+  .second-section-image {
+    height: 100%;
   }
 }
 
@@ -171,6 +175,7 @@
   .menu-header ul {
     width: auto;
     position: absolute;
+    height: 35px;
     left: 50%;
     margin-top: 40px;
     margin-left: -321.203px;
@@ -179,7 +184,7 @@
   }
   .menu-header li {
     text-align: left;
-    height: auto;
+    height: inherit;
     padding-top: 0px;
     border-bottom: 0;
     display: flex;
@@ -269,6 +274,9 @@
   .second-section {
     background: #FFF;
   }
+  .second-section-image {
+    height: 90%;
+  }
 }
 
 /* >= 1024 LG */
@@ -314,6 +322,7 @@
   .menu-header > ul {
     margin-top: 38px;
     margin-left: -374.1095px;
+    height: 37px;
   }
   ul.drop-menu li  {
     width: auto;
