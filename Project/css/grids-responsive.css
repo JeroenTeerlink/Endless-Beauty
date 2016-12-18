@@ -10,7 +10,7 @@
   .menu-header ul {
     transform: scaleY(0.1);
     transform-origin: top;
-    margin-top: 25px;
+    margin-top: 12px;
     left: 0;
     margin-left: 0;
     width: 100vw;
@@ -48,9 +48,9 @@
     display: none;
   }
   ul.drop-menu {
+    z-index: 1;
     position: absolute;
     margin-left: -231px;
-    margin-top: 0px;
     padding-top: 8px;
     display: none;
   }
@@ -63,6 +63,7 @@
     volume: 0;
   }
   header {
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     justify-content: top;
@@ -102,18 +103,25 @@
   #line2 {
     display: none;
   }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8vw;
+  }
+  .second-section {
+    background: url("../images/second-section-image.jpeg");
+    background-size: cover;
+  }
 }
 
 /* >= 568 SM */
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 8vw;
-}
 @media screen and (min-width:35.5em) {
   .menu {
     height: 103px;
+  }
+  .menu-header ul {
+    margin-top: 23px;
   }
 
   #logo {
@@ -125,10 +133,14 @@
   .menu-top ul {
     display: flex;
   }
+  .hero-content i {
+    font-style: italic;
+  }
   header {
     height: 450px;
     display: flex;
-    background-size: auto 450px;
+    background-size: auto 600px;
+    background-attachment: fixed;
   }
   svg {
     width: 400px;
@@ -189,7 +201,6 @@
     background-color: #FFF;
     padding-top: 10px;
     padding-left: 11.5px;
-
   }
 
 
@@ -227,7 +238,7 @@
   }
   header {
     height: 500px;
-    background-size: 100vw 500px;
+    background-size: 100vw 700px;
   }
 
   .hero-content p {
@@ -255,7 +266,9 @@
   #line2 {
     width: 310px;
   }
-
+  .second-section {
+    background: #FFF;
+  }
 }
 
 /* >= 1024 LG */
@@ -266,7 +279,7 @@
 
   header {
     height: 550px;
-    background-size: 100vw 550px;
+    background-size: 100vw 750px;
   }
   .hero-content p {
     font-size: 140px;
@@ -312,7 +325,7 @@
 
   header {
     height: 700px;
-    background-size: 100vw 700px;
+    background-size: 100vw 900px;
   }
 
   .hero-content p {
