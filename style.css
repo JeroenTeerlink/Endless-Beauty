@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  font-family: 'PT Serif', serif;
+  list-style: none;
+  text-decoration: none;
+  background-color: #FFF;
+}
+/* menu */
+.menu {
+  z-index: 1;
+  background-color: #FFF;
+  height: 170px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.menu-header li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-top {
+  margin-top: 20px;
+  height: 80px;
+  margin-left: auto;
+
+}
+.menu-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-button a, .menu-top a {
+  margin-right: 20px;
+  color: #333;
+}
+.menu-button a:hover, .menu-top a:hover {
+  color: #27DDC2;
+}
+
+.menu-header ul {
+
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+  margin-left: -276.875px;
+}
+.menu-header .hor > li {
+  display: inline-block;
+}
+.menu-header li a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.menu-header a {
+  font-family: 'Century Gothic',sans-serif;
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+}
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 2px 2px;
+  padding-bottom: 8px;
+}
+
+
+.menu-button {
+  position: fixed;
+  width: 32px;
+  height: 35px;
+  top: 44px;
+  left: 30px;
+  background-color: inherit;
+
+}
+/* end menu */
+
+/* hero panel */
+
+header {
+    overflow: hidden;
+    background-color: #EEE;
+    display: flex;
+ }
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8vw;
+}
+
+.hero-content p {
+  font-family: "Didot", serif;
+  font-size: 160px;
+  height: auto;
+  width: 110%;
+  color: black;
+  padding-top: 40px;
+  padding-bottom: 43px;
+  text-indent: 0;
+  line-height: 70px;
+}
+
+.hero-content i {
+  line-height: 30px;
+  font-size: 70px;
+}
