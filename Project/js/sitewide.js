@@ -1,13 +1,13 @@
 $(".menu-button").click(function(){
   $(".menu-header ul").toggleClass("active");
+  $(".menu-button i").toggleClass("fa-bars fa-close");
 });
 
 $(window).scroll(function(){
 
 
   var wScroll = $(this).scrollTop();
-  console.log(wScroll);
-  if(wScroll >= 125) {
+  if(wScroll >= 125 && $(window).width() > 576) {
 
     $('.menu').css({
 
@@ -22,11 +22,22 @@ $(window).scroll(function(){
       'background-color': 'rgba(0,0,0,0)'
 
     });
-    $('ul.drop-menu').css({
+    if ($(window).width() >= 1024) {
 
-      'margin-top': '4px'
+      $('ul.drop-menu').css({
 
-    });
+        'margin-top': '4px'
+
+      });
+    } else {
+
+      $('ul.drop-menu').css({
+
+        'margin-top': '5px'
+
+      });
+
+    };
     $('ul.drop-menu li').css({
 
       'background-color': 'rgba(255,255,255,0.2)'

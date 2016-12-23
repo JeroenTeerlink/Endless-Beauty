@@ -26,13 +26,13 @@
     text-align: center;
     height: 30px;
     padding-top: 10px;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     display: block;
     width: 100vw;
     background-color: rgba(255,255,255,1);
   }
   .menu-header li:first-child {
-    border-top: 1px solid black;
+    /*border-top: 1px solid black;*/
   }
 
   #logo {
@@ -72,6 +72,7 @@
     background-image: url("http://f.ptcdn.info/767/007/000/1375063804-CO102-o.jpg");
     background-size: auto 100vh;
     background-repeat: no-repeat;
+    margin-top: -57px;
     /*background-attachment: fixed;*/
   }
   .hero-content {
@@ -117,6 +118,94 @@
   .second-section-image {
     height: 100%;
   }
+
+  .review-header {
+    height: 92px;
+    background: rgba(220,220,220,0.5);
+  }
+
+
+  .review-header-top p, .line {
+    display: none;
+  }
+
+  .review-title h1 {
+    font-size: 50px;
+    padding-top: 15px;
+  }
+
+  .review-title-line {
+    height: 1px;
+    margin-top: 44px;
+  }
+
+  .slider-buttons {
+    display: none;
+  }
+  .swiper-container {
+    height: 210vw;
+    box-shadow: none;
+    overflow-y:hidden;
+  }
+
+  .swiper-slide {
+    display: block;
+    height: 100%;
+  }
+
+  .review-image {
+    background-color: brown;
+    height: 90vw;
+  }
+
+  .review-side {
+    height: 120vw;
+    width: 100%;
+    background-color: white;
+    padding: 0 20px;
+  }
+
+  .review-side p {
+    padding-right: 50px;
+    font-size: 4vw;
+  }
+  p.review-category {
+    font-size: 15px;
+    font-family: 'Jaapokki', sans-serif;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+    padding-right: 0;
+    display: inline-block;
+    width: auto;
+  }
+  .review-side h1 {
+    font-family: 'Didot', serif;
+    font-size: 15vw;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 2.5vh;
+    margin: 0;
+    line-height: 15vw;
+  }
+
+  .review-side a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jaapokki', sans-serif;
+    border: 1px solid black;
+    padding: 2vw 30vw 1vw 30vw;
+    margin: 1.5vh auto;
+    display: inline-block;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    height: 14px;
+  }
+  .swiper-pagination span {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 /* >= 568 SM */
@@ -141,6 +230,7 @@
     font-style: italic;
   }
   header {
+    margin-top: 0px;
     height: 450px;
     display: flex;
     background-size: auto 600px;
@@ -156,6 +246,27 @@
   #line2 {
     display: block;
     width: 265px;
+  }
+
+  .slider-buttons {
+    display: flex;
+    margin-top: 0;
+  }
+  .review-header-top p, .line {
+    display: block;
+    font-size: 1.1em;
+  }
+  .review-title h1 {
+    font-size: 60px;
+    margin-top: -15px;
+  }
+  .review-title-line {
+    height: 2px;
+    margin-top: 38px;
+  }
+  .review-header {
+    height: 170px;
+    background: rgba(220,220,220,0);
   }
 
 }
@@ -276,6 +387,72 @@
   }
   .second-section-image {
     height: 90%;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+  .review-image {
+    height: inherit;
+    width: 60%
+  }
+
+  .review-side {
+    height: inherit;
+    width: 40%;
+  }
+
+  .swiper-container {
+    max-height: 737px;
+    box-shadow: none;
+    box-shadow: 3px 3px 50px rgba(0,0,0,0.3);
+  }
+
+  .review-side p {
+    padding: 20px 40px 20px 35px;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 320px;
+  }
+  
+  p.review-category {
+    font-size: 21px;
+    font-family: 'PT Serif', sans-serif;
+    border-bottom: 1px solid black;
+    padding: 40px 216px 5px 0;
+    margin-left: 35px;
+    display: inline-block;
+    width: auto;
+  }
+  .review-side h1 {
+    font-family: 'Didot', serif;
+    font-size: 60px;
+    width: 90%;
+    padding-top: 20px;
+    padding-left: 35px;
+    margin: 0;
+    line-height: 70px;
+  }
+
+  .review-side a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jaapokki', sans-serif;
+    border: 1px solid black;
+    padding: 12px 40px 10px 36px;
+    font-size: 12px;
+    margin: 1.5vh 35px;
+    display: inline-block;
+  }
+  .swiper-pagination {
+    position: absolute;
+    margin-bottom: 10px;
+    height: 16px;
+  }
+  .swiper-pagination span {
+    height: 12px;
+    width: 12px;
   }
 }
 

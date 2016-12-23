@@ -86,16 +86,11 @@ ul.drop-menu li:last-child {
 
 /* hero panel */
 
-.hero-content i {
-  line-height: 30px;
-  font-size: 70px;
-}
 
 .container {
   margin-top: 170px;
-  height: 300vh;
-  width: 100vw;
   background-color: #EEE;
+  height: 10000px;
 }
 
 /* end hero panel */
@@ -135,7 +130,7 @@ ul.drop-menu li:last-child {
   height: 60vh;
 }
 .second-section-image {
-  z-index: 10000;
+  z-index: 10;
   margin-top: 2%;
   height: 90%;
   background-color: #333;
@@ -165,10 +160,100 @@ ul.drop-menu li:last-child {
   left: 7vh;
   bottom: 4vh;
 }
-.second-section a:hover {
+.container a {
+  transition: all 0.3s ease-in-out;
+}
+.container a:hover {
   background-color: #51C8AC;
   cursor: pointer;
-  border-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0.4);
   color: white;
-  box-shadow: 0px 1px 1px black;
+}
+
+.review-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .5s ease-in-out;
+}
+.review-header-top p{
+  padding-top: 20px;
+  font-family: "Jaapokki", sans-serif;
+  text-align: center;
+
+}
+.review-header-top .line {
+  width: 90px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: black;
+}
+
+.review-title h1{
+  font-family: "Didot", serif;
+  text-align: center;
+}
+
+.review-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 100px;
+}
+
+.review-title-line {
+  margin: 0px 20px 0 20px;
+  width: 450px;
+  height: 2px;
+  background-color: black;
+}
+
+.slider-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.button-slide-prev, .button-slide-next {
+  margin: -30px 25px 0 25px;
+  font-weight: lighter;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  padding: 7px 0 6px 0;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.button-slide-prev {
+  padding-right: 4px;
+}
+.button-slide-next {
+  padding-left: 4px;
+}
+.button-slide-prev:hover, .button-slide-next:hover {
+  background: #CCC;
+  transform: scale(1.1);
+}
+.swiper-container {
+  max-width: 1207px;
+  box-shadow: 5px 5px 50px rgba(0,0,0,0.3);
+}
+
+.slide-2 .review-image {
+  background-color: blue;
+}
+.slide-3 .review-image{
+  background-color: purple  ;
+}
+.review-section.is-showing {
+  opacity: 1;
+  transform: translateY(0px);
+  color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #27DDC2;
 }
