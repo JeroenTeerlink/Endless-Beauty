@@ -10,7 +10,7 @@
   .menu-header ul {
     transform: scaleY(0.1);
     transform-origin: top;
-    margin-top: 12px;
+    margin-top: 0px;
     left: 0;
     margin-left: 0;
     width: 100vw;
@@ -58,9 +58,8 @@
     display: inline-block;
     position: absolute;
   }
-  video, audio, canvas {
-    display: none;
-    volume: 0;
+  .container {
+    margin-top: 167px;
   }
   header {
     z-index: -1;
@@ -69,18 +68,13 @@
     justify-content: top;
     overflow: hidden;
     background-color: #DDD;
-    background-image: url("http://f.ptcdn.info/767/007/000/1375063804-CO102-o.jpg");
+    background-image: url("https://mabrycampbell.files.wordpress.com/2014/04/rotterdam-skyline-from-erasmus-bridge-mabry-campbell-lr.jpg");
     background-size: auto 100vh;
     background-repeat: no-repeat;
     margin-top: -57px;
     /*background-attachment: fixed;*/
   }
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 8vw;
-  }
+
   .hero-content p {
     font-family: "Didot", serif;
     font-size: 100px;
@@ -108,7 +102,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 8vw;
+    margin-left: 0vw;
+    transform: scale(0.8);
   }
   .second-section {
     background: url("../images/second-section-image.jpeg");
@@ -128,10 +123,13 @@
   .review-header-top p, .line {
     display: none;
   }
-
+  .work-header p, .line {
+    display: none;
+  }
   .review-title h1 {
     font-size: 50px;
     padding-top: 15px;
+    margin-top: 0;
   }
 
   .review-title-line {
@@ -206,6 +204,22 @@
     height: 10px;
     width: 10px;
   }
+  .work-header .review-title h1 {
+    font-size: 10vw;
+    font-family: "Didot", serif;
+    width: auto;
+    white-space: nowrap;
+  }
+  .work-header .review-title .review-title-line {
+    width: 15vw;
+    margin: 9vw auto;
+  }
+
+  /* work content section */
+
+
+
+
 }
 
 /* >= 568 SM */
@@ -214,7 +228,7 @@
     height: 103px;
   }
   .menu-header ul {
-    margin-top: 23px;
+    margin-top: 5px;
   }
 
   #logo {
@@ -226,8 +240,16 @@
   .menu-top ul {
     display: flex;
   }
+  .container {
+    margin-top: 122px;
+  }
+  .hero-content {
+    margin-left: 8vw;
+    transform: scale(1);
+  }
   .hero-content i {
     font-style: italic;
+
   }
   header {
     margin-top: 0px;
@@ -256,6 +278,13 @@
     display: block;
     font-size: 1.1em;
   }
+  .work-header p, .line {
+    display: block;
+  }
+  .work-header .line {
+    width: 70px;
+
+  }
   .review-title h1 {
     font-size: 60px;
     margin-top: -15px;
@@ -268,7 +297,17 @@
     height: 170px;
     background: rgba(220,220,220,0);
   }
+  .work-header .review-title h1 {
+    font-size: 60px;
+    font-family: "Didot", serif;
+    width: auto;
+    padding: 25px 5px;
+  }
 
+  .work-header .review-title .review-title-line {
+    width: 100%;
+    margin: 48px 20px;
+  }
 }
 
 /* >= 768 MD */
@@ -352,6 +391,9 @@
   .menu-button {
     display: none;
   }
+  .container {
+    margin-top: 175px;
+  }
   header {
     height: 500px;
     background-size: 100vw 700px;
@@ -408,20 +450,19 @@
     box-shadow: none;
     box-shadow: 3px 3px 50px rgba(0,0,0,0.3);
   }
-
   .review-side p {
-    padding: 20px 40px 20px 35px;
+    padding: 20px 40px 20px -10px;
+    margin-left: -8px;
     font-size: 18px;
     line-height: 20px;
-    max-width: 320px;
   }
-  
+
   p.review-category {
     font-size: 21px;
     font-family: 'PT Serif', sans-serif;
     border-bottom: 1px solid black;
     padding: 40px 216px 5px 0;
-    margin-left: 35px;
+    margin-left: 0px;
     display: inline-block;
     width: auto;
   }
@@ -430,8 +471,9 @@
     font-size: 60px;
     width: 90%;
     padding-top: 20px;
-    padding-left: 35px;
+    padding-left: 0px;
     margin: 0;
+    margin-left: -10px;
     line-height: 70px;
   }
 
@@ -442,9 +484,10 @@
     border: 1px solid black;
     padding: 12px 40px 10px 36px;
     font-size: 12px;
-    margin: 1.5vh 35px;
+    margin: 1.5vh -8px;
     display: inline-block;
   }
+
   .swiper-pagination {
     position: absolute;
     margin-bottom: 10px;
@@ -487,7 +530,23 @@
   #line2 {
     width: 380px;
   }
+  .review-side p {
+    padding: 20px 40px 20px 35px;
+  }
 
+  p.review-category {
+    padding: 40px 216px 5px 0;
+    margin-left: 30px;
+  }
+  .review-side h1 {
+    padding-left: 25px;
+    margin: 0;
+  }
+
+  .review-side a {
+    padding: 12px 40px 10px 36px;
+    margin: 1.5vh 28px;
+  }
 }
 
 

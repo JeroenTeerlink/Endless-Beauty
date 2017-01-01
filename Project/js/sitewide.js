@@ -7,13 +7,13 @@ $(window).scroll(function(){
 
 
   var wScroll = $(this).scrollTop();
-  if(wScroll >= 125 && $(window).width() > 576) {
+  if(wScroll >= 125 && $(window).width() > 768) {
 
     $('.menu').css({
 
       'position': 'fixed',
       'margin-top': '-125px',
-      'background-color': 'rgba(255,255,255,0.2)'
+      'background-color': 'rgba(255,255,255,0.5)'
 
     });
     $('.menu-header > ul li').css({
@@ -40,7 +40,7 @@ $(window).scroll(function(){
     };
     $('ul.drop-menu li').css({
 
-      'background-color': 'rgba(255,255,255,0.2)'
+      'background-color': 'rgba(255,255,255,0.5)'
 
     });
 
