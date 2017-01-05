@@ -88,15 +88,15 @@ ul.drop-menu li:last-child {
 
 .container {
   margin-top: 170px;
-  background: linear-gradient(#EEE,#EEE,#EEE, #9BC1FD);
+  background: linear-gradient(to right, #EEE, #F3F3F3,#FAFAFA, #F9F9F9, #FBFBFB, #F5F5F5,#F6F6F6, #F9F9F9, #F2F2F2);
   background-color: rgba(255,255,255,0);
   background-blend-mode: lighten;
   height: auto;
 }
 .bottom-background img {
   width: 100%;
-  opacity: 0.6;
-  background-color: #ADC8E2;
+  opacity: 0.95;
+  background-color: #9CC2FD;
 }
 /* second-section */
 
@@ -335,21 +335,15 @@ p.section-title{
 }
 .work-card:hover {
   box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-  transform: scale(1.02);
 }
-#card-1 {
-  height: 798px;
-  width: 389px;
-  margin-right: 20px;
-  margin-bottom: 100px;
+.work-card:hover img {
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+  transform: scale(1.06);
 }
-#card-1 img {
-  width: 389px;
+.work-card img {
+  transition: all 0.5s ease-in-out;
 }
-#card-1 .image-section {
-  height: 349px;
-  overflow: hidden;
-}
+
 
 #card-2 {
   height: 389px;
@@ -373,11 +367,15 @@ p.section-title{
   width: 389px;
   margin-right: 20px;
   background: url("https://c1.staticflickr.com/5/4071/4421099684_ffcbe6b449_b.jpg");
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0,0,0,0.6);
   background-blend-mode: darken;
   background-size: cover;
   text-align: center;
   color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+#card-3:hover {
+  background-color: rgba(0,0,0,0.35);
 }
 #card-3 .card-category {
   border-bottom: white 1px solid;
@@ -403,6 +401,7 @@ p.section-title{
   text-align: center;
   display: flex;
   justify-content: center;
+  -webkit-justify-content: center;
   align-items: center;
   perspective: 1000px;
 }
@@ -424,7 +423,10 @@ p.section-title{
   width: 349px;
   border: 1px solid black;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: all 0.8s ease-in-out;
+  top: 20px;
+  left: 20px;
 }
 .inner-work-card-back {
   transform: rotateY(180deg);
@@ -441,7 +443,7 @@ p.section-title{
 }
 
 footer {
-  height: 100px;
+  height: 85px;
   display: flex;
   flex-direction: row;
   align-items: center;
