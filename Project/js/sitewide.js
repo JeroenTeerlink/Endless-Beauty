@@ -7,14 +7,17 @@ $(window).scroll(function(){
 
 
   var wScroll = $(this).scrollTop();
-  if(wScroll >= 125 && $(window).width() > 768) {
+  if(wScroll >= 100 && $(window).width() > 768) {
 
     $('.menu').css({
 
       'position': 'fixed',
-      'margin-top': '-125px',
+      'margin-top': '-100px',
       'background-color': 'rgba(255,255,255,0.5)'
 
+    });
+    $('.container').css({
+      'margin-top': '100px'
     });
     $('.menu-header > ul li').css({
 
@@ -26,14 +29,14 @@ $(window).scroll(function(){
 
       $('ul.drop-menu').css({
 
-        'margin-top': '4px'
+        'margin-top': '15px'
 
       });
     } else {
 
       $('ul.drop-menu').css({
 
-        'margin-top': '5px'
+        'margin-top': '15px'
 
       });
 
@@ -48,25 +51,24 @@ $(window).scroll(function(){
 
     $('.menu').css({
 
-      'position': 'absolute',
+      'position': 'relative',
       'margin-top': '0',
-      'background-color': 'rgba(255,255,255,1)'
+      'background-color': '#FFF'
 
     });
+    if ($(window).width() <= 568) {
+      $('.container').css({
+        'margin-top': '57px'
+      });
+    } else {
+      $('.container').css({
+        'margin-top': '0px'
+      });
+    }
     $('.menu-header li').css({
 
 
       'background-color': 'rgba(255,255,255,1)'
-
-    });
-    $('ul.drop-menu').css({
-
-      'margin-top': '-3px'
-
-    });
-    $('ul.drop-menu').css({
-
-      'margin-top': '-3px'
 
     });
   };

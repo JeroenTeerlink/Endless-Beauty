@@ -11,17 +11,13 @@ $(document).ready(function () {
       nextButton: '.button-slide-next',
       prevButton: '.button-slide-prev'
     })
-    mySwiper.on('slideChangeStart', function () {
-      console.log('slide change start');
-    });
   });
 
 
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-
-  if ($(this).width() > 568) {
+  if ($(this).width() > 568 && wScroll <= 603) {
     $('.hero-content').css({
 
     'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
@@ -48,7 +44,7 @@ $(window).scroll(function(){
     $('.work-header').addClass('is-showing');
   };
   if(wScroll >  $('.work-content').offset().top - ($(window).height() / 3)) {
-    console.log("yes");
+  
     $('.work-card').each(function(i) {
 
       setTimeout(function(){

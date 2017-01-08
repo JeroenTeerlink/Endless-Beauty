@@ -1,71 +1,16 @@
 /* >= 0 XS */
 @media screen and (min-width:0) {
-  .menu {
-    height: 92px;
-  }
 
-  .menu-header {
-    display: block;
-  }
-  .menu-header ul {
-    transform: scaleY(0.1);
-    transform-origin: top;
-    margin-top: 0px;
-    left: 0;
-    margin-left: 0;
-    width: 100vw;
-    opacity: 0;
-  }
-
-  .menu-header .active {
-    transition: transform 0.3s ease;
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  .menu-header li {
-    text-align: center;
-    height: 30px;
-    padding-top: 10px;
-    /*border-bottom: 1px solid black;*/
-    display: block;
-    width: 100vw;
-    background-color: rgba(255,255,255,1);
-  }
-  .menu-header li:first-child {
-    /*border-top: 1px solid black;*/
-  }
-
-  #logo {
-    position: static;
-    float: right;
-    margin-right: 30px;
-    height: 70px;
-  }
-  .menu-top ul {
+  .bottom-background {
     display: none;
-  }
-  #drop-arrow {
-    display: none;
-  }
-  ul.drop-menu {
-    z-index: 1;
-    position: absolute;
-    margin-left: -231px;
-    padding-top: 8px;
-    display: none;
-  }
-  .menu-button {
-    display: inline-block;
-    position: absolute;
-  }
-  .container {
-    margin-top: 167px;
   }
   header {
     z-index: -1;
     height: 100vh;
     width: 100vw;
-    justify-content: top;
+    -webkit-box-pack: top;
+        -ms-flex-pack: top;
+            justify-content: top;
     overflow: hidden;
     background-color: #DDD;
     background-image: url("https://mabrycampbell.files.wordpress.com/2014/04/rotterdam-skyline-from-erasmus-bridge-mabry-campbell-lr.jpg");
@@ -99,11 +44,19 @@
     display: none;
   }
   .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 0vw;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .second-section {
     background: url("../images/second-section-image.jpeg");
@@ -116,7 +69,7 @@
 
   .review-header {
     height: 92px;
-    background: rgba(220,220,220,0.5);
+    background: rgba(200,200,200,0.1);
   }
 
 
@@ -215,44 +168,18 @@
     margin: 9vw auto;
   }
 
-  /* work content section */
-	.work-card-collection {
-  	   max-width: 1207px;
-  	   flex-direction: column;
-  	   align-items: center;
-     }
-     
-    
-   .bottom-background {
-     display:none;
-   }
-   
+  .social-list {
+    display: none;
+  }
 }
 
 /* >= 568 SM */
 @media screen and (min-width:35.5em) {
-  .menu {
-    height: 103px;
-  }
-  .menu-header ul {
-    margin-top: 5px;
-  }
 
-  #logo {
-    position: absolute;
-    left: 50%;
-    margin-left: -117.422px;
-    height: 80px;
-  }
-  .menu-top ul {
-    display: flex;
-  }
-  .container {
-    margin-top: 122px;
-  }
   .hero-content {
     margin-left: 8vw;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .hero-content i {
     font-style: italic;
@@ -261,6 +188,8 @@
   header {
     margin-top: 0px;
     height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-size: auto 600px;
     background-attachment: fixed;
@@ -270,7 +199,8 @@
   }
   #line1 {
     display: block;
-    transform: translateX(-33px);
+    -webkit-transform: translateX(-33px);
+            transform: translateX(-33px);
   }
   #line2 {
     display: block;
@@ -278,6 +208,8 @@
   }
 
   .slider-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 0;
   }
@@ -302,8 +234,8 @@
   }
   .review-header {
     height: 170px;
-    background: rgba(220,220,220,0);
   }
+
   .work-header .review-title h1 {
     font-size: 60px;
     font-family: "Didot", serif;
@@ -315,94 +247,19 @@
     width: 100%;
     margin: 48px 20px;
   }
-  .bottom-background {
-     display:block;
-   }
+  .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
 }
 
 /* >= 768 MD */
 @media screen and (min-width:48em) {
-  .menu {
-    display: inline-block;
-    height: 175px;
-  }
-  #logo {
-    height: 80px;
-  }
-  .menu-header {
-    display: block;
-  }
-  .menu-header ul {
-    width: auto;
-    position: absolute;
-    height: 35px;
-    left: 50%;
-    margin-top: 40px;
-    margin-left: -321.203px;
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  .menu-header li {
-    text-align: left;
-    height: inherit;
-    padding-top: 0px;
-    border-bottom: 0;
-    display: flex;
-    width: auto;
-    background-color:white;
-  }
-  .menu-header li:first-child {
-    border-top: 0;
-  }
-  .menu-header .hor > li {
-    display: inline-block;
-  }
-  ul.drop-menu {
-    margin-left: -273.5px;
-    margin-top: -3px;
-  }
-  ul.drop-menu li  {
-    height: 20px;
-    background-color: #FFF;
-    padding-top: 10px;
-    padding-left: 11.5px;
-  }
-
-
-  li:hover > ul.drop-menu {
-    display: block;
-    -webkit-animation: dropdown 350ms ease-in-out;
-            animation: dropdown 350ms ease-in-out;
-    -webkit-transform-origin: center top;
-            transform-origin: center top;
-  }
-  @-webkit-keyframes dropdown {
-    0% {
-      -webkit-transform: scaleY(0.01);
-              transform: scaleY(0.01);
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-    }
-
-  }
-  @keyframes dropdown {
-    0% {
-      -webkit-transform: scaleY(0.01);
-              transform: scaleY(0.01);
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-    }
-
-  }
-  .menu-button {
-    display: none;
-  }
   .container {
-    margin-top: 175px;
+    background: -webkit-linear-gradient(left, #EDEDED, #F5F5F5, #FAFAFA, #FAFAFA, #F6F6F6, #F9F9F9, #F1F1F1);
+    background: linear-gradient(to right, #EDEDED, #F5F5F5, #FAFAFA, #FAFAFA, #F6F6F6, #F9F9F9, #F1F1F1);
   }
   header {
     height: 500px;
@@ -429,7 +286,8 @@
     width: 445px;
   }
   #line1 {
-    transform: translateX(-33px);
+    -webkit-transform: translateX(-33px);
+            transform: translateX(-33px);
   }
   #line2 {
     width: 310px;
@@ -441,8 +299,13 @@
     height: 90%;
   }
   .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width:100%;
   }
   .review-image {
@@ -507,13 +370,13 @@
     height: 12px;
     width: 12px;
   }
+  .bottom-background {
+    display: block;
+  }
 }
 
 /* >= 1024 LG */
 @media screen and (min-width:64em) {
-  video, audio, canvas {
-    display: inline-block;
-  }
 
   header {
     height: 550px;
@@ -535,7 +398,8 @@
     width: 515px;
   }
   #line1 {
-    transform: translateX(-13px);
+    -webkit-transform: translateX(-13px);
+            transform: translateX(-13px);
   }
   #line2 {
     width: 380px;
@@ -599,99 +463,10 @@
     width: 565px;
   }
   #line1 {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   #line2 {
     width: 430px;
-  }
-}
-@media screen and (min-width:300px) {
-	#card-1 {
-    display: block;
-    margin-bottom: 100px;
-    margin-right: 20px;
-  }
-  #card-1 .image-section {
-    height: 349px;
-  }
-  #card-1 {
-    height: 798px;
-    width: 389px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-  }
-  #card-1 img {
-    width: 389px;
-  }
-  #card-1 .text-section{
-    width: 389px;
-  }
-  .right-cards {
-  	align-items: center;	
-  }
-    #card-2 .image-section {
-      height: 349px;
-    }
-    #card-2 {
-      display: block;
-      height: 798px;
-      width: 389px;
-      margin-right: 20px;
-      margin-bottom: 0px;
-    }
-    #card-2 img, #card-2 .text-section {
-      width: 389px;
-    }
-	.bottom-right-cards {
-	flex-direction: column;
-	}
-	.bottom-right-cards .work-card {
-		margin-right: 0;
-	}
-}
-@media screen and (min-width:409px) {
-  #card-1 {
-    margin-bottom:0px;
-    margin-right:0px;
-  }
-  #card-1 img {
-    width: 319px;
-  }
-  #card-1 .text-section {
-    width: 479px;
-    
-  }
-  #card-1 .image-section {
-   height: 389px;
-   overflow-y:hidden;
-  }
-  #card-1 a {
-  	width: 65.05px;
-  }
-  #card-1 .card-category {
-   width: 58.507px
-  }
-}
-@media screen and (min-width:1207px) {
-  .work-card-collection {
-    max-width: 1207px;
-    flex-direction: row;
-  }
-  #card-1 {
-    display: block;
-    margin-bottom: 100px;
-    margin-right: 20px;
-  }
-  #card-1 .image-section {
-    height: 349px;
-  }
-  #card-1 {
-    height: 798px;
-    width: 389px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-  }
-  #card-1 img, #card-1 .text-section {
-    width: 389px;
   }
 }

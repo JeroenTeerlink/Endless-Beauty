@@ -1,0 +1,248 @@
+/* non-responsive part of menu */
+* {
+  list-style: none;
+}
+
+.menu {
+  z-index: 2;
+  background-color: #FFF;
+  height: auto;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-top ul {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 29px;
+}
+
+#logo {
+  display: block;
+}
+
+.fa-twitter {
+  color: #1EA1F3;
+}
+.fa-facebook-official {
+  color: #3F589B;
+}
+.fa-linkedin {
+  color: #007BB7;
+}
+i.fa-instagram {
+  background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-lg {
+  line-height: 1em;
+  font-size: 30px;
+}
+
+.menu-header ul {
+  z-index: 1000;
+  margin: 0 auto;
+
+}
+
+.menu-header a {
+  font-family: 'Century Gothic',sans-serif;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-right: 15px;
+}.menu-header a:hover {
+  opacity: 1;
+}
+.hor li:last-child {
+  margin-right:0;
+  padding-bottom:10px;
+}
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 2px 2px;
+  padding-bottom: 8px;
+}
+
+
+.menu-button {
+  display: inline-block;
+  position: absolute;
+  width: 32px;
+  height: 35px;
+  top: 48px;
+  left: 30px;
+  background-color: inherit;
+
+}
+.menu-button a, .menu-top ul a {
+  margin-right: 20px;
+  color: #333;
+}
+.menu-button a:hover, .menu-top a:hover {
+  color: #27DDC2;
+}
+
+/* responsive part of menu */
+
+/* >= 0 XS */
+@media screen and (min-width:0) {
+  .menu {
+    height: 126px;
+  }
+  .menu-top {
+    padding-top: 28px;
+  }
+  .menu-header {
+    margin-top: 20px;
+    height:auto;
+  }
+  .menu-header ul {
+    transform: scaleY(0.1);
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  .menu-header .active {
+    transition: transform 0.3s ease;
+    transform: scaleY(1);
+    opacity: 1;
+    padding-left: 0;
+  }
+  .menu-header li {
+    text-align: center;
+    padding-top: 15px;
+    background-color: #FFF;
+  }
+
+  #logo {
+    margin-left: auto;
+    margin-right: 10px;
+    width:205px;
+    height: 70px;
+  }
+  .menu-top ul {
+    display: none;
+  }
+  #drop-arrow {
+    display: none;
+  }
+  ul.drop-menu {
+    position: absolute;
+    display: none;
+    margin-left: -5px;
+  }
+  .menu-button {
+    position: absolute;
+  }
+
+}
+
+/* >= 568 SM */
+@media screen and (min-width:35.5em) {
+
+  .menu-top {
+    padding-top: 20px;
+  }
+  .menu-top ul {
+    display: flex;
+  }
+  #logo {
+    width: 235px;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+
+}
+
+/* >= 768 MD */
+@media screen and (min-width:48em) {
+  .menu {
+    height: auto;
+  }
+  #drop-arrow {
+    display: inherit;
+  }
+  .menu-header {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .menu-header ul {
+    height: auto;
+    transform: scaleY(1);
+    opacity: 1;
+    padding-left: 0;
+
+  }
+  .hor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hor li:last-child {
+    margin-right:0;
+    padding-bottom:0px;
+  }
+  .menu-header li {
+    text-align: left;
+    padding-top: 0px;
+    display: flex;
+    width: auto;
+  }
+  .menu-header .hor > li {
+    display: inline-block;
+  }
+
+  ul.drop-menu li  {
+    height: 20px;
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+
+
+  li:hover > ul.drop-menu {
+    display: block;
+    -webkit-animation: dropdown 250ms ease-out;
+            animation: dropdown 250ms ease-out;
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+  }
+  @-webkit-keyframes dropdown {
+    0% {
+      -webkit-transform: scaleY(0.01);
+              transform: scaleY(0.01);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+
+  }
+  @keyframes dropdown {
+    0% {
+      -webkit-transform: scaleY(0.01);
+              transform: scaleY(0.01);
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+
+  }
+  .menu-button {
+    display: none;
+  }
+}
+
+/* >= 1280 XL */
+@media screen and (min-width:80em) {
+  .menu .hor > li {
+    font-size: 1.2em;
+  }
+}
