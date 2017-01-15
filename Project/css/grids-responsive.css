@@ -257,9 +257,7 @@
 
 /* >= 768 MD */
 @media screen and (min-width:48em) {
-  .container {
-    background: -webkit-linear-gradient(left, #EDEDED, #F5F5F5, #FAFAFA, #FAFAFA, #F6F6F6, #F9F9F9, #F1F1F1);
-    background: linear-gradient(to right, #EDEDED, #F5F5F5, #FAFAFA, #FAFAFA, #F6F6F6, #F9F9F9, #F1F1F1);
+
   }
   header {
     height: 500px;
@@ -427,19 +425,7 @@
 /* >= 1280 XL */
 @media screen and (min-width:80em) {
   .menu .hor > li {
-    font-size: 1.2em;
-  }
-  .menu-header > ul {
-    margin-top: 38px;
-    margin-left: -374.1095px;
-    height: 37px;
-  }
-  ul.drop-menu li  {
-    width: auto;
-  }
-  ul.drop-menu {
-    margin-left: -316px;
-    margin-top: -3px;
+    font-size: 1.1em;
   }
 
   header {

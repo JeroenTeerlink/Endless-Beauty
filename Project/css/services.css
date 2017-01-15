@@ -49,3 +49,11 @@ html, body {
 
 
 /* responsive part of services page */
+@media (max-width:567) {
+  body,html {
+    overflow: visible;
+  }
+
+
+
+}

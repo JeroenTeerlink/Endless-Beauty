@@ -29,14 +29,14 @@ $(window).scroll(function(){
 
       $('ul.drop-menu').css({
 
-        'margin-top': '15px'
+        'margin-top': '11px'
 
       });
     } else {
 
       $('ul.drop-menu').css({
 
-        'margin-top': '15px'
+        'margin-top': '14px'
 
       });
 
@@ -57,8 +57,8 @@ $(window).scroll(function(){
 
     });
     if ($(window).width() <= 568) {
-      $('.container').css({
-        'margin-top': '57px'
+      $('header').css({
+        'margin-top': '0px'
       });
     } else {
       $('.container').css({

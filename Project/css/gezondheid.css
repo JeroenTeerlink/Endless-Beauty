@@ -1,0 +1,332 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.container {
+  background-image: linear-gradient(to top, #D1D0E2, #EEE);
+}
+#hero {
+  height: 850px;
+  background: url("../images/straightawayhero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.05);
+  background-blend-mode: color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero-text {
+  height: 350px;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+#hero-text.visible {
+  opacity: 1;
+}
+
+.swiper-container {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 550px;
+  height: 550px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  height: 65px;
+  width: 65px;
+  background-color: rgba(50,50,50,0.15);
+  border-radius: 50%;
+}
+
+#description {
+  height: auto;
+  padding-bottom: 1px;
+}
+#jumbotron {
+  height: auto;
+  max-width: 1407px;
+  border: lightgrey 5px solid;
+  border-radius: 5px;
+  margin: 100px auto;
+  background-color: white;
+}
+
+#jumbotron h1, #jumbotron h3, #jumbotron p, #jumbotron a {
+  margin: 0 155px 0 125px;
+}
+#jumbotron h3 {
+  font-family: "Jaapokki", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 50px 0px 0px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+#jumbotron h1 {
+  font-family: "Didot", serif;
+  font-size: 56px;
+  margin-top: 20px;
+}
+#jumbotron p {
+  font-family: "PT Serif", serif;
+  font-size: 1.1em;
+  padding: 60px 0 50px;
+  margin-right: 220px;
+}
+#jumbotron a {
+  margin-bottom: 50px;
+}
+.container a {
+  font-family: "Jaapokki", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 12px 35px 8px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+}
+.container a:hover {
+  color: white;
+}
+.container a:after {
+  content:"";
+  position:absolute;
+  width:200%;
+  height:100%;
+  left:-215%;
+  top:0;
+  background-color: #51C8AC;
+  transform:skew(45deg);
+  -webkit-transform:skew(45deg);
+  transition:0.45s;
+  -webkit-transition:0.45s;
+  z-index: -1;
+}
+.container a:hover:after {
+  left:-15%;
+}
+#btitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+.line {
+  margin: 0px 20px 0 20px;
+  width: 450px;
+  height: 2px;
+  background-color: black;
+  margin-top: 47px;
+}
+.title {
+  text-align: center;
+}
+.title h3 {
+  font-family: "Jaapokki", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 30px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin: 0;
+}
+.title h1 {
+  font-family: "Didot", serif;
+  font-size: 60px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#card {
+  height: 420px;
+  width: 350px;
+  background-color: black;
+  margin: 0 auto;
+}
+.swiper-pagination {
+  margin: 50px auto 60px;
+  position: static;
+}
+.swiper-pagination-bullet {
+    transform: rotate(45deg);
+    margin: 0 40px !important;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 0;
+    border: 2px solid #ccc;
+    background-color: white;
+    z-index: 10;
+}
+.swiper-pagination-bullet-active {
+  color:#fff;
+  background: #51C8AC;
+  border-width: 0px;
+  box-shadow: 5px 5px 5px #AAA;
+}
+.swiper-pagination-bullet:hover {
+  box-shadow: 3px 3px 5px #AAA;
+}
+/*.swiper-pagination-bullet::after {
+    content: ".";
+    font-size: 0;
+    width: 42px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 94px;
+    top: -15px;
+    margin: 0;
+    transform: rotate(-45deg);
+}*/
+.swiper-pagination-bullet:last-child::after {
+  width: 0;
+}
+.swiper-pagination-bullet p {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2em;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 15px;
+}
+
+.swiper-container {
+  height: 800px;
+  max-width: 1407px;
+  padding: 0;
+  margin-bottom: 100px;
+}
+.swiper-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pointer {
+  height: 100%;
+  width: 63%;
+  background: #FFF;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 76% 0%, 100% 50%, 76% 100%, 0% 100%);
+}
+.pointer::before {
+  margin: 50px 0 0 50px;
+  content: ".";
+  font-size: 0;
+  height: 83%;
+  width: 40%;
+  border-top: 5px solid #CCC;
+  border-left: 5px solid #CCC;
+  position: absolute;
+}
+.pointer h3 {
+  margin-left: 75px;
+  margin-top: 50px;
+  margin: 50px 0 0 75px;
+  padding: 25px 0 0;
+  font-family: "jaapokki", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+.pointer h1 {
+  font-family: "Didot", serif;
+  font-size: 65px;
+  padding-bottom: 20px;
+}
+span {
+  font-family: serif;
+}
+
+.pointer h1, .pointer p {
+  margin: 0 0 0 50px;
+  padding-left: 25px;
+  padding-right: 25%;
+}
+.pointer a {
+  margin-top: 32px;
+  left: 75px;
+}
+.receiver {
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 30% 50%, 0% 0%);
+}
+#receiver-1 {
+  background: url('../images/Carla.jpg');
+}
+#receiver-2 {
+  background: url('http://www.setyo.nl/wp-content/uploads/2014/08/13155909_xxl-AFSLANKEN.jpg');
+}
+#receiver-3 {
+  background: url('../images/receiver3.jpg');
+}
+#receiver-4 {
+  background: url('http://www.braidenchastain.com/wp-content/uploads/2015/06/Healthy_lifestyle_adventure_fitness_outdoors.jpg');
+}
+.bottom-background img {
+  width: 100%;
+}
+@media (max-width: 1150px) {
+
+  #jumbotron h1, #jumbotron h3, #jumbotron p, #jumbotron a {
+    margin: 0 85px 0 55px;
+  }
+  #jumbotron p {
+    font-size: 1em;
+    padding: 40px 0 25px;
+    margin-right: 50px;
+  }
+  #jumbotron h1 {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+  #jumbotron a {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
