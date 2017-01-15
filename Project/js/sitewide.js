@@ -17,7 +17,7 @@ $(window).scroll(function(){
 
     });
     $('.container').css({
-      'margin-top': '100px'
+      'margin-top': '150px'
     });
     $('.menu-header > ul li').css({
 
