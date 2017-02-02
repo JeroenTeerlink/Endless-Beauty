@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1, a, p, h2, h3 {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+#reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto 0;
+}
+.two-column-row {
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  padding-right: 30px;
+}
+.two-column-column {
+  flex: 0 0 45%;
+  margin: 0 2.5%;
+}
+
+.review {
+  background: #F0F0F2;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+.quote-mark {
+  border-radius: 50%;
+  border: #666 solid 2px;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -23px;
+}
+.quote-mark h1 {
+  font-family: 'Coustard', serif;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  font-weight: lighter;
+  height: 50px;
+  color: #666;
+}
+.review p {
+  padding: 0 30px;
+  font-size: 0.90em;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.review h3 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 30px 0;
+  color: #666;
+}
+.review h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 5px 30px 25px;
+  margin: 0;
+  color: #666;
+}
+.review a {
+  font-family: "Roboto", sans-serif;
+  color: tomato;
+  border: 2px solid tomato;
+  border-radius: 3px;
+  padding: 6px 20px;
+  margin: 10px 30px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.review a:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.side-bar {
+  flex: 0 0 25%;
+  border-left: 1px solid #E6E6E6;
+  max-width: 280px;
+}
+.side-bar h2, .side-bar h3  {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  padding-left: 30px;
+  color: #444;
+
+}
+.side-bar p {
+  font-family: "Open Sans", sans-serif;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #666;
+}
+.side-bar a {
+  margin-left: 32px;
+  color: tomato;
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+.side-bar a:hover{
+  color: black;
+}
+.fa-th {
+  font-size: 120px;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  color: tomato;
+}
+#write-reviews {
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+}
