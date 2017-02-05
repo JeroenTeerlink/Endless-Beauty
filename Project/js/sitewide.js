@@ -3,7 +3,7 @@ $(".menu-button").click(function(){
   $(".menu-button i").toggleClass("fa-bars fa-close");
 });
 
-$(window).scroll(function(){
+/*$(window).scroll(function(){
 
 
   var wScroll = $(this).scrollTop();
@@ -36,7 +36,7 @@ $(window).scroll(function(){
 
       $('ul.drop-menu').css({
 
-        'margin-top': '14px'
+        'margin-top': '13px'
 
       });
 
@@ -73,3 +73,4 @@ $(window).scroll(function(){
     });
   };
 });
+*/

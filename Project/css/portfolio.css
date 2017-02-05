@@ -1,0 +1,215 @@
+html, body {
+  font-family: 'PT Serif', serif;
+  list-style: none;
+  text-decoration: none;
+  background-color: #FFF;
+  overflow-x: hidden;
+}
+
+.sub-header {
+  background-color: white;
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  height: 300px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  height: 110px;
+}
+
+#scroll {
+  height: 35px;
+  width: 35px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-bottom: 5px;
+  -webkit-animation: scroll;
+          animation: scroll
+}
+@-webkit-keyframes scroll {
+  0%   {-webkit-transform: translateY(0px) rotate(90deg);transform: translateY(0px) rotate(90deg);}
+  100% {-webkit-transform: translateY(30px) rotate(90deg);transform: translateY(30px) rotate(90deg);}
+}
+@keyframes scroll {
+  0%   {-webkit-transform: translateY(0px) rotate(90deg);transform: translateY(0px) rotate(90deg);}
+  100% {-webkit-transform: translateY(30px) rotate(90deg);transform: translateY(30px) rotate(90deg);}
+}
+
+section h1 {
+  margin: 0;
+  font-family: "Didot", serif;
+  font-size: 64px;
+  color: #333;
+}
+section h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 3em;
+  padding-top: 15px;
+  color: #444;
+}
+section p {
+  font-family: "Raleway";
+  font-size: 1.3em;
+  color: #39AAFA;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+@media screen and (min-width: 880px) {
+  #scroll {
+      -webkit-animation: scroll 1.5s infinite 0s;
+              animation: scroll 1.5s infinite 0s;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      margin-bottom: 0px;
+  }
+}
+.video-section, .photo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  /*background: #EBF5F5;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.description h1 {
+  font-family: "Raleway";
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
+  /*padding-top: 60px;*/
+  color: #333;
+}
+.description p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 40px 80px;
+  text-align: center;
+  color: #666;
+  line-height: 1.725em;
+  letter-spacing: 0.0425em;
+}
+#VRK-logo {
+  height: 150px;
+  padding-top: 30px;
+}
+.two-column-column {
+  height: 50%;
+  width: 50%;
+  /*flex: 0 0 50%;*/
+}
+.shim {
+  background: url("../images/test.jpg");
+  height: 30vw;
+  background-size: cover !important;
+}
+#in-between {
+  background: url("../images/Roses.jpg");
+  background-position: bottom;
+  background-color: rgba(255,255,255,0.95);
+  background-blend-mode: color-burn;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#in-between h2 {
+  color: #f36f95;
+  font-weight: 800;
+  font-family: "Raleway";
+  margin-bottom: 20px;
+}
+#in-between p {
+  font-size: 1em;
+  color: #333;
+  padding-bottom: 30px;
+  line-height: 1.5em;
+}
+#gallery-wrapper {
+  background-image: linear-gradient(#F0F2F2, #E8E8EE);
+}
+#portfolio-gallery {
+  padding-top: 100px;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.thumbnail {
+  height: 300px;
+  width: 25%;
+  background: url("../images/CarlaSmall.jpg") center center no-repeat;
+}
+.bottom-background {
+  height: 600px;
+  background-color: rgba(240,240,242,0.85);
+  background-blend-mode: color-burn;
+  background-image: url("../images/bbackground.jpg");
+  background-position: bottom;
+  background-size: cover;
+}

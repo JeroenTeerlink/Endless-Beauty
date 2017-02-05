@@ -20,7 +20,7 @@ $(window).scroll(function(){
   if ($(this).width() > 568 && wScroll <= 603) {
     $('.hero-content').css({
 
-    'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
+      'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
 
     });
   }
@@ -44,7 +44,7 @@ $(window).scroll(function(){
     $('.work-header').addClass('is-showing');
   };
   if(wScroll >  $('.work-content').offset().top - ($(window).height() / 3)) {
-  
+
     $('.work-card').each(function(i) {
 
       setTimeout(function(){

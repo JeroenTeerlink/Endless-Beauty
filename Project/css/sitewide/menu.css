@@ -2,6 +2,13 @@
 * {
   list-style: none;
 }
+html, body {
+  font-family: 'PT Serif', serif;
+  list-style: none;
+  text-decoration: none;
+  background-color: #FFF;
+  overflow-x: hidden;
+}
 
 .menu {
   z-index: 2;
@@ -86,6 +93,10 @@ ul.drop-menu li:last-child {
 }
 .menu-button a:hover, .menu-top a:hover {
   color: #27DDC2;
+}
+
+.active {
+  color: black !important;
 }
 
 /* responsive part of menu */

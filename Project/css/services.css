@@ -6,6 +6,46 @@ html, body {
 .container {
   background-image: linear-gradient(to top, #D1D0E2, #EEE);
 }
+#btitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+.line {
+  margin: 0px 20px 0 20px;
+  width: 642px;
+  height: 2px;
+  background-color: black;
+  margin-top: 47px;
+}
+.title {
+  text-align: center;
+  padding-top: 60px;
+}
+.title h3 {
+  font-family: "Jaapokki", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  margin: 0;
+}
+.title h1 {
+  font-family: "Didot", serif;
+  font-size: 60px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .collection {
   padding-top: 30px;
   display: flex;
@@ -23,11 +63,15 @@ html, body {
   height: 96%;
   width: 96%;
   margin: auto;
-  z-index: 10;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
+  overflow: hidden;
+  background-color: white;
+  transition: all 1s ease-in-out 0.1s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 svg {
   position: absolute;
@@ -35,34 +79,123 @@ svg {
 .shape {
   stroke-dasharray: 0 12000;
   stroke-dashoffset: 0;
-  stroke-width: 12px;
+  stroke-width: 10px;
   fill: transparent;
-  stroke: #19f6e8;
-  transition: stroke-dasharray 4s ease-in-out 0.5s;
+  stroke: steelblue;
+  transition: stroke-dasharray 3s ease-in-out 0.1s;
 }
 .pure-u-1-1:hover .shape {
-  stroke-width: 12px;
+  stroke-width: 10px;
   stroke-dashoffset: 0;
   stroke-dasharray: 12000;
-}
-.box-1:hover {
-  opacity:0;
+  transition: stroke-dasharray 3s ease-in-out 0s;
 }
 
 .box-1 {
-  background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');
-  background-color: white;
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: lightblue;
   background-size: cover;
-  transition: all 1s ease-in-out 1s;
+}
+.box-2 {
+  /*background: url('http://www.lifestyle-fabriek.nl/wp-content/uploads/2015/01/lash1.jpg');*/
+  background-color: tomato;
+  background-size: cover;
+}
+.box-3 {
+  /*background: url('http://g01.a.alicdn.com/kf/HTB1HZi0LVXXXXaeaXXXq6xXFXXX5/Nieuwe-Merk-Stijltang-Kam-Irons-met-Lcd-scherm-Haar-Ijzer-Elektrische-Borstel-Haarverzorging-Haar-Rechttrekken-Styling.jpg');*/
+  background-color: yellow;
+  background-size: cover;
+}
+.box-4 {
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: purple;
+  background-size: cover;
+}
+.box-5 {
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: green;
+  background-size: cover;
+}
+.box-6 {
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: pink;
+  background-size: cover;
+}
+.box-7 {
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: orange;
+  background-size: cover;
+}
+.box-8 {
+  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
+  background-color: tomato;
+  background-size: cover;
 }
 
+.pure-u-1-1:hover .box-text {
+  margin-top: 0;
+  padding-top: 25px;
+  background: rgba(255,255,255,0.7);
+  transition: all 0.8s ease-in-out 0.3s;
+}
 h2 {
-  opacity: 1;
   font-family: "Didot", serif;
   font-size: 50px;
-  display: block;
-  background: rgba(255,255,255,0.9);
-  width: 100%;
-  height: 75px;
   padding-top: 10px;
+  margin: 0;
+  width: auto;
+  word-break: break-all;
+}
+
+.box-text {
+  opacity: 1;
+  display: block;
+  height: 400px;
+  padding: 0px 10px 0px 10px;
+  margin: 305px 0 0 0;
+  transition: all 0.8s ease-in-out 0.5s;
+  background: rgba(255,255,255,0.9);
+  overflow: hidden;
+}
+.container a {
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+ }
+ 
+.box-text a{
+  font-family: "Jaapokki", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 12px 35px 8px;
+  border: 1px solid black;
+  display: inline-block;
+  background: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+}
+.box-text a:hover {
+  color: white;
+}
+.box-text a:after {
+  content:"";
+  position:absolute;
+  width:200%;
+  height:100%;
+  left:-215%;
+  top:0;
+  background-color: #51C8AC;
+  transform:skew(45deg);
+  -webkit-transform:skew(45deg);
+  transition:0.45s;
+  -webkit-transition:0.45s;
+  z-index: -1;
+}
+.box-text a:hover:after {
+  left:-15%;
 }

@@ -52,3 +52,19 @@ footer a:hover {
   color: #51C8AC;
   cursor: pointer;
 }
+
+/* >= 768 MD */
+@media screen and (max-width:48em) {
+
+  #extra-footer-info {
+    display: none;
+  }
+  .social-list {
+    display: none !important;
+  }
+  footer {
+    background-color: #222;
+  }
+  footer p {
+    color: white;
+  }
