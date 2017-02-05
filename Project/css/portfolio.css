@@ -162,7 +162,7 @@ section p {
 #in-between {
   background: url("../images/Roses.jpg");
   background-position: bottom;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255,0.85);
   background-blend-mode: color-burn;
   text-align: center;
   display: -webkit-box;
@@ -212,4 +212,50 @@ section p {
   background-image: url("../images/bbackground.jpg");
   background-position: bottom;
   background-size: cover;
+}
+@media (max-width: 1000px) {
+
+  .thumbnail {
+    width: 33%;
+  }
+  .description h1 {
+    display: none;
+  }
+  #VRK-logo {
+    padding-top: 0;
+  }
+  #portfolio-gallery {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 750px) {
+  .thumbnail {
+    width: 50%;
+  }
+  .video-section {
+    flex-direction: column-reverse;
+  }
+  .two-column-column {
+    width: 100%;
+  }
+  .description h1 {
+    font-size: 32px;
+    display: block;
+  }
+  #VRK-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100px;
+  }
+  #portfolio-gallery {
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  .thumbnail {
+    width: 100%;
+  }
+  .bottom-background {
+    display: none;
+  }
 }
