@@ -2,71 +2,72 @@ a {
   text-decoration: none;
 }
 
-.sub-header {
-  background-color: white;
-  height: auto;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  cursor: pointer;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, p, a, div {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+	font-family: "Avenir", sans-serif;
 }
 
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0;
-  height: 110px;
+#sub-header {
+	cursor: pointer;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background-color: white;
+	position: relative;
+	padding-bottom: 30px;
 }
-
-#scroll {
-  height: 35px;
-  width: 35px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  margin-bottom: 5px;
+#sub-header h1 {
+	font-family: "Didot", serif;
+	font-size: 63px;
+	letter-spacing: .0125em;
+	padding-bottom: 10px;
 }
-@-webkit-keyframes scroll {
-  0%   {-webkit-transform: translateY(0px) rotate(90deg);transform: translateY(0px) rotate(90deg);}
-  100% {-webkit-transform: translateY(30px) rotate(90deg);transform: translateY(30px) rotate(90deg);}
+#sub-header p {
+	font-size: 24px;
+	font-weight: 200;
+	color: #3C96FF;
+	padding-bottom: 5px;
 }
-@keyframes scroll {
-  0%   {-webkit-transform: translateY(0px) rotate(90deg);transform: translateY(0px) rotate(90deg);}
-  100% {-webkit-transform: translateY(30px) rotate(90deg);transform: translateY(30px) rotate(90deg);}
+#circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #39AAFA;
+	margin: 8px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: up-down 1.5s ease-in-out infinite;
+	animation-direction: alternate;
+}
+.container .fa-angle-down {
+	color: #3C96FF;
+	font-size: 24px;
+	font-weight: light;
+}
+@keyframes up-down {
+	0% { transform: translateY(0) }
+	100% { transform: translateY(25px) }
 }
 
 section h1 {
-  margin: 0;
-  font-family: "Didot", serif;
   font-size: 64px;
-  color: #333;
 }
 
 section p {
-  font-family: "Raleway";
   font-size: 1.3em;
-  color: #39AAFA;
   font-weight: 500;
   max-width: 800px;
 }
@@ -109,14 +110,13 @@ section p {
 }
 .carla-popup h2,.carla-popup-mobile h2 {
   margin: 0;
-  font-family: "lato",serif;
+  margin-top: 15px;
   font-weight: 100;
   font-size: 32px;
   color: #333;
 }
 .carla-popup span,.carla-popup-mobile span {
-  font-family: "Lato",sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   color: #454545;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -166,15 +166,19 @@ section p {
 
 section h2 {
   font-family: "Raleway";
-  font-weight: 400;
+  font-weight: 100;
+  margin-top: 15px;
   font-size: 3em;
-  padding-top: 15px;
   color: #444;
+}
+#mijn-verhaal-bericht h2 {
+	padding-top: 30px;
+	font-weight: 700;
 }
 #mijn-verhaal-bericht p {
   color: #444;
-  margin: 0;
-
+  margin-top: 30px;
+  font-weight: 100;
 }
 #signature {
   height: 45px;
@@ -583,19 +587,6 @@ a.mijn-verhaal-cta:hover {
   }
 }
 @media screen and (min-width:880px) {
-  .sub-header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 300px;
-  }
-  #scroll {
-    -webkit-animation: scroll 1.5s infinite 0s;
-            animation: scroll 1.5s infinite 0s;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    margin-bottom: 0px;
-  }
 
   .img-src {
     position: absolute;

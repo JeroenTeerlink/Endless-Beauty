@@ -3,238 +3,245 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
-.container {
-  background-image: linear-gradient(to top, #D1D0E2, #EEE);
+h1, h2, h3, h4, p, a, div {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+	font-family: "Avenir", sans-serif;
 }
-#hero {
-  height: 850px;
-  background: url("http://andygaines.com/wp-content/uploads/2016/01/best-wedding-photographer-england-2015-1001-1-1.jpg");
-  background-size: cover;
-  background-position: bottom center;
-  background-color: tomato;
-  background-blend-mode: darken;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#sub-header {
+	cursor: pointer;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 2;
+	background-color: white;
+	position: relative;
+}
+#sub-header h1 {
+	font-family: "Didot", serif;
+	font-size: 63px;
+	letter-spacing: .0125em;
+	padding-bottom: 10px;
+}
+#sub-header p {
+	font-size: 24px;
+	font-weight: 200;
+	color: #3C96FF;
+	padding-bottom: 5px;
+}
+#circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #3C96FF;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: up-down 1.5s ease-in-out infinite;
+	animation-direction: alternate;
+}
+.container .fa-angle-down {
+	color: #3C96FF;
+	font-size: 24px;
+	font-weight: light;
+}
+@keyframes up-down {
+	0% { transform: translateY(0) }
+	100% { transform: translateY(25px) }
+}	
+
+.slope-effect {
+	transform: skewY(-2deg);
+	height: 115px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	margin-top: -65px;
+	z-index: 1;
 }
 
-#hero-text {
-  height: 350px;
-  margin-left: 12vw;
-  margin-right: 12vw;
-  opacity: 0;
-  transition: all 2s ease-in-out;
+#gallery {
+	background-color: #F0F2F2;
+	padding-top: 20px;
 }
-#hero-text.visible {
-  opacity: 1;
+.gallery-row {
+	height: 200px;
+	background: url("../images/gallery-row.png");
+	background-repeat: repeat-x;
+	background-position: 0px center;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 0;
 }
-
-.swiper-container {
-        width: 100%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+.gallery-mobile {
+	display: none;
+	height: inherit;
 }
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 550px;
-  height: 550px;
+.gallery-mobile * {
+	color: white;
 }
-
-.swiper-button-prev, .swiper-button-next {
-  height: 65px;
-  width: 65px;
-  background-color: rgba(50,50,50,0.15);
-  border-radius: 50%;
+#mobile-gallery-text {
+	text-align: right;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-
-#description {
-  height: auto;
-  padding-bottom: 1px;
+#mobile-gallery-text h2 {
+	/* font-size: 36px; */
+	font-size: 8vw;
+	line-height: 10vw;
 }
-#jumbotron {
-  height: auto;
-  width: 80%;
-  border: lightgrey 3px solid;
-  border-radius: 8px;
-  margin: 100px auto;
-  background-color: white;
+#mobile-gallery-text h1 {
+	font-weight: 100;
+	margin-top: 5px;
+	font-size: 24vw;
 }
-
-#jumbotron h1, #jumbotron h3, #jumbotron p, #jumbotron a {
-  margin: 0 155px 0 125px;
+#boek-nu-cta {
+	text-transform: uppercase;
+	border: 2px solid #3C66BB;
+	background-color: #3C66BB;
+	border-radius: 5px;
+	padding: 12px 30px 10px;
+	margin-top: 100px;
+	transition: all 0.3s ease-in-out;
 }
-#jumbotron h3 {
-  font-family: "Jaapokki", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 50px 0px 0px;
-  border-bottom: 2px solid black;
-  display: inline-block;
+#boek-nu-cta:hover {
+	background-color: #3366AA;
+	border-color: #3366AA;
 }
-#jumbotron h1 {
-  font-family: "Didot", serif;
-  font-size: 56px;
-  margin-top: 20px;
+.line {
+	background: white;
+	width: 4px;
+	position: absolute;
+	display: none;
 }
-#jumbotron p {
-  font-family: "PT Serif", serif;
-  font-size: 1.1em;
-  padding: 60px 0 50px;
-  margin-right: 220px;
+#vertical-line {
+	height: 105vh;
+	left: 85px;
+	top: 300px;
+	transform: rotate(-3deg);
 }
-#jumbotron a {
-  font-family: "Jaapokki", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 12px 35px 8px;
-  border: 1px solid black;
-  display: inline-block;
-  margin-bottom: 50px;
-  cursor: pointer;
-  background: none;
-  overflow: hidden;
-  position: relative;
-  z-index: 3;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: black;
-  text-decoration: none;
+#horizontal-line {
+	height: 4px;
+	left: 0;
+	top: 400px;
+	width: 105vw;
+	transform: rotate(3deg);
 }
-#jumbotron a:hover {
-  color: white;
+#quote {
+	height: 400px;
+	width: 100%;
+	background: url("https://static.pexels.com/photos/297755/pexels-photo-297755.jpeg") center center;
+	background-color: rgba(255,255,255,0.25);
+	background-blend-mode: lighten;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-#jumbotron a:after {
-  content:"";
-  position:absolute;
-  width:200%;
-  height:100%;
-  left:-215%;
-  top:0;
-  background-color: #51C8AC;
-  transform:skew(45deg);
-  -webkit-transform:skew(45deg);
-  transition:0.45s;
-  -webkit-transition:0.45s;
-  z-index: -1;
+.quote-circle {
+	border-radius: 50%;
+	background-color: rgba(0,88,255,0.4);
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
 }
-#jumbotron a:hover:after {
-  left:-15%;
+#big-circle {
+	margin-top: -50px;
+	margin-right: -50px;
+	font-size: 48px;
+	height: 300px;
+	width: 300px;
 }
-
-#title {
-  text-align: center;
-  padding-top: 50px;
+#medium-circle {
+	margin-top: -170px;
+	margin-left: -50px;
+	font-size: 24px;
+	height: 200px;
+	width: 200px;
 }
-#title h3 {
-  font-family: "Jaapokki", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 0 30px;
-  border-bottom: 2px solid black;
-  display: inline-block;
-  margin: 0;
+#small-circle {
+	margin-top: 200px;
+	margin-left: 50px;
+	font-size: 16px;
+	height: 125px;
+	width: 125px;
 }
-#title h1 {
-  font-family: "Didot", serif;
-  font-size: 68px;
-  margin-top: 10px;
-  text-transform: uppercase;
+#body {
+	width: 85%;
+	z-index: 2;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	/* top: -92px; */
+	padding-bottom: 60px;
 }
-
-#price-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 700px;
-  width: 101vw;
-  margin-left: -1vw;
-  background-color: white;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+#body h1 {
+	font-size: 56px;
+	height: auto;
+	flex: 0 0 96%;
+	margin: 0 2%;
+	padding-bottom: 60px;
+}
+#body p {
+	flex: 0 0 46%;
+	font-size: 16px;
+	margin: 0 2%;
+	padding-bottom: 30px;
 }
 
-card {
-  height: 420px;
-  width: 350px;
-  background-color: black;
-}
-#c2 {
-  height: 480px;
-  margin-top:50px;
-}
-.bottom-background img {
-  width: 100%;
-}
-
-@media (max-width: 1150px) {
-
-  body {font-size: 90%;}
-
-  #jumbotron h1, #jumbotron h3, #jumbotron p, #jumbotron a {
-    margin: 0 85px 0 55px;
-  }
-  #jumbotron p {
-    font-size: 1em;
-    padding: 40px 0 25px;
-    margin-right: 50px;
-  }
-  #jumbotron h1 {
-    font-size: 42px;
-    margin-top: 20px;
-  }
-  #jumbotron a {
-    font-size: 16px;
-    margin-bottom: 25px;
-  }
-
-  #price-cards {
-    flex-direction: column;
-    height: auto;
-    background-color: rgba(0,0,0,0);
-    box-shadow: none;
-    padding: 0px 0;
-  }
-  card {
-    margin-bottom: 50px;
-  }
-  #c2 {
-    margin-top: 0;
-  }
-}
 @media (max-width: 800px) {
-
-  body {font-size: 80%;}
-  .rtext {
-    display: none;
-  }
-  #jumbotron {
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-  }
-  #gallery, .swiper-container {
-    height: 300px;
-    padding: 0;
-  }
-  .swiper-slide {
-    height: inherit;
-    width: 100%;
-  }
-}
+	#sub-header {
+		height: 180px;
+	}
+	#circle {
+		display: none;
+	}
+	.slope-effect {
+		display: none;
+	}
+	.gallery-row {
+		display: none;
+	}
+	#gallery {
+		height: 100vh;
+		background: url("../images/gallery-mobile.jpeg");
+		background-size: cover;
+		background-color: rgba(0,0,50,0.3);
+		background-blend-mode: darken;
+	}
+	.gallery-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.line {
+		display: block;
+	}
+	#quote {
+		display: none;
+	}
+	#body {
+		flex-direction: column;
+	}
+	#body h1 {
+		font-size: 9vw;
+		color: #F64493;
+		font-weight: 800;
+		margin-top: 30px;
+		padding-bottom: 30px;
+	}
+	#body p {
+		font-size: 14px;
+		padding-bottom: 20px;
+	}

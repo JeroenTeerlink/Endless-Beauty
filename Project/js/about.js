@@ -15,9 +15,8 @@ $(window).scroll(function() {
     }
 });
 
-$('.sub-header').click(function(){
-    $("html, body").animate({ scrollTop: 450 }, 600);
-    return false;
+$('#sub-header').click(function(){
+    $("html, body").animate({ scrollTop: 400 }, 600);
  });
  $('.scroll-top-button').click(function(){
      $("html, body").animate({ scrollTop: 0 }, 800);

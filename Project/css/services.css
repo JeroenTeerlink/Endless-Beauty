@@ -3,199 +3,156 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
-.container {
-  background-image: linear-gradient(to top, #D1D0E2, #EEE);
+
+h1, h2, h3, h4, p, a, div {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+	font-family: "Avenir", sans-serif;
 }
-#btitle {
+#sub-header {
+	cursor: pointer;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background-color: white;
+	position: relative;
+	padding-bottom: 30px;
+}
+#sub-header h1 {
+	font-family: "Didot", serif;
+	font-size: 63px;
+	letter-spacing: .0125em;
+	padding-bottom: 10px;
+}
+#sub-header p {
+	font-size: 24px;
+	font-weight: 200;
+	color: #3C96FF;
+	padding-bottom: 5px;
+}
+#circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #3C96FF;
+	margin: 8px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: up-down 1.5s ease-in-out infinite;
+	animation-direction: alternate;
+}
+.container .fa-angle-down {
+	color: #3C96FF;
+	font-size: 24px;
+	font-weight: light;
+}
+@keyframes up-down {
+	0% { transform: translateY(0) }
+	100% { transform: translateY(25px) }
+}
+
+/* Einde sub-header */
+.lijst-item:nth-child(even) {
+	flex-direction: row-reverse;
+	background: white;
+}
+.lijst-item:last-child {
+	border-bottom: none;
+}
+.lijst-item {
+	height: 300px;
+	width: 100%;
+	background: #F0F2F2;
+	display: flex;
+	align-items: center;
+	/* border-bottom: 1px black dashed; */
+}
+.item-foto {
+	opacity: 0;
+	height: 330px;
+	width: 330px;
+	border-radius: 50%;
+	background-size: cover !important;
+	background-position: center !important;
+	z-index: 3;
+}
+#wedding-item .item-foto {
+	opacity: 1 !important;
+	background: url("https://static.pexels.com/photos/247295/pexels-photo-247295.jpeg");
+}
+#wimper-item .item-foto {
+	background: url("https://static.pexels.com/photos/46279/brown-brown-eyes-iris-gene-46279.jpeg");
+}
+#haar-item .item-foto {
+	background: url("https://static.pexels.com/photos/6171/hairstyle-hair-wedding-bride.jpg");
+}
+#visagie-item .item-foto {
+	background: url("https://static.pexels.com/photos/6169/woman-hand-girl-professional.jpg");
+}
+#schoonheid-item .item-foto {
+	background: url("https://static.pexels.com/photos/3192/woman-girl-beauty-mask.jpg");
+}
+#kleding-item .item-foto {
+	background: url("https://static.pexels.com/photos/26549/pexels-photo-26549.jpg");
+}
+#metamorfose-item .item-foto {
+	background: url("https://static.pexels.com/photos/6404/woman-girl-young-beauty.jpg");
+}
+#gezondheid-item .item-foto {
+	background: url("../images/receiver3.jpg");
+}
+
+.item-text {
+	text-align: center;
+	margin: 0 auto;
+}
+.item-text h2 {
+	font-size: 56px;
+	letter-spacing: .0525em;
+}
+.item-text p {
+	font-size: 1.1em;
+}
+#final {
+	background: #F0F2F2;
+	padding-top: 30px;
+	text-align: center;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 89px solid transparent;
+  border-right: 89px solid transparent;
+  border-top: 50px solid white;
+  margin: 0 auto;
+}
+.scroll-top-button {
+  color: steelblue;
+  border: 2px solid steelblue;
+  border-radius: 3px;
+  padding: 8px 18px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: none;
+}
+.scroll-top-button:hover {
+  background: steelblue;
+  color: white;
+}
+.link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
-}
-.line {
-  margin: 0px 20px 0 20px;
-  width: 642px;
-  height: 2px;
-  background-color: black;
-  margin-top: 47px;
-}
-.title {
-  text-align: center;
-  padding-top: 60px;
-}
-.title h3 {
-  font-family: "Jaapokki", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 0 15px;
-  border-bottom: 2px solid black;
-  display: inline-block;
-  margin: 0;
-}
-.title h1 {
-  font-family: "Didot", serif;
-  font-size: 60px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.collection {
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pure-u-1-1 {
-  height: 405px;
-  width: 405px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.l-box {
-  height: 96%;
-  width: 96%;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  overflow: hidden;
-  background-color: white;
-  transition: all 1s ease-in-out 0.1s;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
-svg {
-  position: absolute;
-}
-.shape {
-  stroke-dasharray: 0 12000;
-  stroke-dashoffset: 0;
-  stroke-width: 10px;
-  fill: transparent;
-  stroke: steelblue;
-  transition: stroke-dasharray 3s ease-in-out 0.1s;
-}
-.pure-u-1-1:hover .shape {
-  stroke-width: 10px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 12000;
-  transition: stroke-dasharray 3s ease-in-out 0s;
-}
-
-.box-1 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: lightblue;
-  background-size: cover;
-}
-.box-2 {
-  /*background: url('http://www.lifestyle-fabriek.nl/wp-content/uploads/2015/01/lash1.jpg');*/
-  background-color: tomato;
-  background-size: cover;
-}
-.box-3 {
-  /*background: url('http://g01.a.alicdn.com/kf/HTB1HZi0LVXXXXaeaXXXq6xXFXXX5/Nieuwe-Merk-Stijltang-Kam-Irons-met-Lcd-scherm-Haar-Ijzer-Elektrische-Borstel-Haarverzorging-Haar-Rechttrekken-Styling.jpg');*/
-  background-color: yellow;
-  background-size: cover;
-}
-.box-4 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: purple;
-  background-size: cover;
-}
-.box-5 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: green;
-  background-size: cover;
-}
-.box-6 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: pink;
-  background-size: cover;
-}
-.box-7 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: orange;
-  background-size: cover;
-}
-.box-8 {
-  /*background: url('http://easyweddings-wordpress.s3.amazonaws.com/wp-content/uploads/sites/5/2014/01/465543695.jpg');*/
-  background-color: tomato;
-  background-size: cover;
-}
-
-.pure-u-1-1:hover .box-text {
-  margin-top: 0;
-  padding-top: 25px;
-  background: rgba(255,255,255,0.7);
-  transition: all 0.8s ease-in-out 0.3s;
-}
-h2 {
-  font-family: "Didot", serif;
-  font-size: 50px;
-  padding-top: 10px;
-  margin: 0;
-  width: auto;
-  word-break: break-all;
-}
-
-.box-text {
-  opacity: 1;
-  display: block;
-  height: 400px;
-  padding: 0px 10px 0px 10px;
-  margin: 305px 0 0 0;
-  transition: all 0.8s ease-in-out 0.5s;
-  background: rgba(255,255,255,0.9);
-  overflow: hidden;
-}
-.container a {
-   text-decoration: none;
-   color: black;
-   cursor: pointer;
- }
- 
-.box-text a{
-  font-family: "Jaapokki", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 12px 35px 8px;
-  border: 1px solid black;
-  display: inline-block;
-  background: none;
-  overflow: hidden;
-  position: relative;
-  z-index: 3;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: black;
-  text-decoration: none;
-}
-.box-text a:hover {
-  color: white;
-}
-.box-text a:after {
-  content:"";
-  position:absolute;
-  width:200%;
-  height:100%;
-  left:-215%;
-  top:0;
-  background-color: #51C8AC;
-  transform:skew(45deg);
-  -webkit-transform:skew(45deg);
-  transition:0.45s;
-  -webkit-transition:0.45s;
-  z-index: -1;
-}
-.box-text a:hover:after {
-  left:-15%;
+  padding: 20px 0;
 }

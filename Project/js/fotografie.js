@@ -1,25 +1,26 @@
-$(document).ready(function () {
-    //initialize swiper when document ready
+function checkIfAnimationShouldPlay() {
+	if (s <= 160 || s >= 900) {
+		$(".gallery-row").css("animation-play-state", "paused");
+	} else {
+		$(".gallery-row").css("animation-play-state", "running");
+	}
+}
 
-      var mySwiper = new Swiper ('.swiper-container', {
-        // Optional parameters
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        speed: 500,
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true
-        }
-      });
+$(window).scroll(function() {
+	s = $(window).scrollTop();
+	console.log(s);
+	
+	// $(".gallery-row").css("left", s+"px");
+	if (s <= 1050 && $(window).width() > 800) {
+		galleryScroll();
+	}
+});
 
-    $('#hero-text').addClass('visible');
+function galleryScroll() {
+	$("#upper-row, #bottom-row").css("background-position", "" + s / 2 + "px");
+	$("#middle-row").css("background-position", "-" + s / 3 + "px");
+}
+
+$("#sub-header").click(function() {
+	$('html, body').animate({ scrollTop: '1120px' }, 1500);
 });
