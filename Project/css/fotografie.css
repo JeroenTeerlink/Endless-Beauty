@@ -21,6 +21,19 @@ h1, h2, h3, h4, p, a, div {
 	background-color: white;
 	position: relative;
 }
+#sub-header:after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	z-index: -1;
+	content: "";
+	top: 20px;
+	left: 0;
+	right: 0;
+	transform-origin: bottom right;
+	transform: skewY(-2deg);
+}
 #sub-header h1 {
 	font-family: "Didot", serif;
 	font-size: 63px;
@@ -28,16 +41,16 @@ h1, h2, h3, h4, p, a, div {
 	padding-bottom: 10px;
 }
 #sub-header p {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 200;
-	color: #3C96FF;
+	color: #79A432;
 	padding-bottom: 5px;
 }
 #circle {
-	height: 30px;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 	border-radius: 50%;
-	border: 2px solid #3C96FF;
+	border: 2px solid #79A432;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -46,8 +59,8 @@ h1, h2, h3, h4, p, a, div {
 	animation-direction: alternate;
 }
 .container .fa-angle-down {
-	color: #3C96FF;
-	font-size: 24px;
+	color: #79A432;
+	font-size: 22px;
 	font-weight: light;
 }
 @keyframes up-down {
@@ -147,7 +160,7 @@ h1, h2, h3, h4, p, a, div {
 }
 .quote-circle {
 	border-radius: 50%;
-	background-color: rgba(0,88,255,0.4);
+	background-color: rgba(65,205,250,0.3);
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
@@ -186,9 +199,9 @@ h1, h2, h3, h4, p, a, div {
 	padding-bottom: 60px;
 }
 #body h1 {
-	font-size: 56px;
+	font-size: 38px;
 	height: auto;
-	flex: 0 0 96%;
+	flex: 0 0 46%;
 	margin: 0 2%;
 	padding-bottom: 60px;
 }
@@ -198,7 +211,10 @@ h1, h2, h3, h4, p, a, div {
 	margin: 0 2%;
 	padding-bottom: 30px;
 }
-
+#body img {
+	width: 50%;
+	height: 50%;
+}
 @media (max-width: 800px) {
 	#sub-header {
 		height: 180px;

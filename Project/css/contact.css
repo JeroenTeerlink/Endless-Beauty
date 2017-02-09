@@ -94,7 +94,7 @@ textarea { resize: vertical; height: 200px; }
 
 .bottom-background {
   height: 500px;
-  background-color: rgba(240,240,242,0.85);
+  background-color: rgba(244,32,140,0.10);
   background-blend-mode: color-burn;
   background-image: url("../images/bbackground.jpg");
   background-position: bottom;

@@ -21,32 +21,16 @@
 
   <body>
 
-    <div class="menu">
+    <nav>
       <div class="menu-top">
         <a href="#"><img id="logo" src="images/Logo.jpeg"></a>
-        <ul>
-          <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook-official fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-        </ul>
       </div>
 
       <div class="menu-header">
         <ul class="hor">
           <li><a href="index.html">Home</a></li>
           <li id="drop-anchor">
-            <a href="services.html">Services <span id="drop-arrow"><i class="fa fa-angle-down"></i></span></a>
-            <ul class="drop-menu">
-              <li><a href="#">Bruidsstyling</a></li>
-              <li><a href="#">Wimperstyling</a></li>
-              <li><a href="#">Haarstyling</a></li>
-              <li><a href="#">Visagie</a></li>
-              <li><a href="#">Schoonheid</a></li>
-              <li><a href="#">Kledingstyling</a></li>
-              <li><a href="#">Metamorfose</a></li>
-              <li><a href="#">Straight Away</a></li>
-            </ul>
+          	<a href="services.html">Services</a>
           </li>
           <li><a href="/Gezondheid/">Fotografie</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -54,13 +38,27 @@
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
       </div>
-
-      <div class="menu-button">
-        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+      <ul class="drop-menu">
+		  <li><a href="#">Bruidsstyling</a></li>
+		  <li><a href="#">Wimperstyling</a></li>
+		  <li><a href="#">Haarstyling</a></li>
+		  <li><a href="#">Visagie</a></li>
+		  <li><a href="#">Schoonheidsbehandelingen</a></li>
+		  <li><a href="#">Kledingstyling</a></li>
+		  <li><a href="#">Metamorfose</a></li>
+		  <li><a href="#">Straight Away</a></li>
+	  </ul>	
+      <div class="burger-wrap">
+        <a class="burger"><span></span></a>
       </div>
-
-    </div>
+    </nav>
 
     <div class="container">
       <section id="sub-header">
@@ -68,7 +66,7 @@
 		<p>Professionele fotografie waar en wanneer u wilt!</p>
 		<div id="circle"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
       </section>
-      <div class="slope-effect">
+      <!-- <div class="slope-effect"> -->
       	
       </div>
       <section id="gallery">
@@ -92,16 +90,17 @@
       	</div>
       </section>
       <section id="quote">
-      	<div class="quote-circle" id="big-circle">Altijd</div>
-      	<div class="quote-circle" id="small-circle">Overal</div>
-      	<div class="quote-circle" id="medium-circle">Goedkoop</div>
+      	<div class="quote-circle" id="big-circle"><!-- Altijd --></div>
+      	<div class="quote-circle" id="small-circle"><!-- Overal --></div>
+      	<div class="quote-circle" id="medium-circle"><!-- Goedkoop --></div>
       </section>
       <div class="slope-effect">
       </div>
       <section id="body">
-      <h1>Een Willekeurige Titel Hier</h1>
+      <h1>Een Willekeurige Titel</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non mattis lectus. Ut iaculis sapien molestie, hendrerit justo pulvinar, feugiat ipsum. Donec tempus faucibus lorem a luctus. Vivamus vestibulum felis in malesuada ultrices. Nunc nec mattis ex. Donec condimentum condimentum ullamcorper. Maecenas id elementum justo, sit amet scelerisque arcu. Mauris vehicula, libero sit amet vestibulum tristique, massa tortor porta lectus, a placerat arcu odio eu libero.</p>
       <p>Pellentesque ullamcorper suscipit orci non iaculis. Pellentesque eu ex in nulla ullamcorper lobortis. Nulla commodo velit lacinia sapien viverra, quis blandit sem feugiat. Nulla facilisi. Donec eleifend pellentesque scelerisque. Etiam dapibus porta lectus ut commodo. Ut lobortis leo turpis, quis pretium nunc aliquet a. Etiam sodales lobortis condimentum. Etiam malesuada auctor leo, non fermentum nulla egestas eu. Nunc auctor mi quis nibh elementum mattis.</p>
+      <img class="bla" src="images/Carla.jpg">
       <h1>Prijzen</h1>
       </section>
     </div>
@@ -118,6 +117,7 @@
         <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
       </ul>
     </footer>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
