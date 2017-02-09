@@ -1,22 +1,20 @@
 $(".burger").click(function(){
   $("nav").toggleClass("open");
-  $(".hor, .menu-header").toggleClass("active");
-  // $('body').bind('touchmove', function(e){e.preventDefault()});
+  $('body').bind('touchmove', function(e){e.preventDefault()});
 });
 $(function() {
     // DOM ready
-	if ($(window).width() >= 768) {
-		$('#drop-anchor, .drop-menu').hover(
+	$('#drop-anchor, .drop-menu').hover(
 		function () {
 			$('.drop-menu').toggleClass("show");
 			$('#drop-anchor a').toggleClass("hovered");
-		}, 
+		},
 		function () {
 			$('.drop-menu').toggleClass("show");
 			$('#drop-anchor a').toggleClass("hovered");
-		});
-	}
-	
+	   }
+   );
+
 });
 
 /*$(window).scroll(function(){
