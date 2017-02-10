@@ -17,24 +17,24 @@ $(document).ready(function () {
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-  if ($(this).width() > 568 && wScroll <= 603) {
-    $('.hero-content').css({
+  // if ($(this).width() > 568 && wScroll <= 603) {
+//     $('.hero-content').css({
+// 
+//       'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
+// 
+//     });
+//   }
 
-      'transform' : 'translate(0px, '+ wScroll / 16 +'%)'
-
-    });
-  }
-
-  if(wScroll >  $('.second-section').offset().top - ($(window).height() / 2)) {
-    $('.second-section div').each(function(i) {
-
-      setTimeout(function(){
-        $('.second-section div').eq(i).addClass('is-showing');
-      }, 200 * (i + 1));
-
-
-    });
-  };
+  // if(wScroll >  $('.second-section').offset().top - ($(window).height() / 2)) {
+//     $('.second-section div').each(function(i) {
+// 
+//       setTimeout(function(){
+//         $('.second-section div').eq(i).addClass('is-showing');
+//       }, 200 * (i + 1));
+// 
+// 
+//     });
+//   };
 
 
   if(wScroll >  $('.review-section').offset().top - ($(window).height() / 2)) {

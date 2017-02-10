@@ -8,34 +8,31 @@
     z-index: -1;
     height: 100vh;
     width: 100vw;
-    -webkit-box-pack: top;
-        -ms-flex-pack: top;
-            justify-content: top;
-    overflow: hidden;
-    background-color: #DDD;
-    background-image: url("https://mabrycampbell.files.wordpress.com/2014/04/rotterdam-skyline-from-erasmus-bridge-mabry-campbell-lr.jpg");
-    background-size: auto 100vh;
+    background-color: rgba(0,0,100,0.2);
+    background-image: url("https://static.pexels.com/photos/136422/pexels-photo-136422.jpeg");
+    /* background-image: url("https://static.pexels.com/photos/128922/pexels-photo-128922.jpeg"); */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
     margin-top: -57px;
     /*background-attachment: fixed;*/
   }
 
-  .hero-content p {
-    font-family: "Didot", serif;
-    font-size: 100px;
-    height: auto;
-    width: 110%;
-    color: black;
-    padding-top: 34px;
-    padding-bottom: 37px;
-    text-indent: 0;
-    line-height: 50px;
+  .hero-content h1 {
+    font-family: 'Yesteryear'!important;
+    font-size: 175px;
+    color: white !important;
+    margin: 0;
+    line-height: 160px;
   }
 
-  .hero-content i {
-    line-height: 17px;
-    font-size: 45px;
-    font-style: normal;
+  .hero-content p {
+  	font-family: "Avenir";
+    font-size: 40px;
+    font-weight: 100;
+    color: white !important;
+    margin-left: 280px;
   }
   #line1 {
     display: none;
@@ -47,16 +44,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0vw;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+	flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   .second-section {
     background: url("../images/second-section-image.jpeg");
@@ -191,7 +181,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-size: auto 600px;
     background-attachment: fixed;
   }
   svg {
@@ -261,24 +250,6 @@
   }
   header {
     height: 500px;
-    background-size: 100vw 700px;
-  }
-
-  .hero-content p {
-    font-family: "Didot", serif;
-    font-size: 120px;
-    height: auto;
-    width: 110%;
-    color: black;
-    padding-top: 34px;
-    padding-bottom: 37px;
-    text-indent: 0;
-    line-height: 50px;
-  }
-
-  .hero-content i {
-    line-height: 17px;
-    font-size: 50px;
   }
   svg {
     width: 445px;
@@ -378,20 +349,8 @@
 
   header {
     height: 550px;
-    background-size: 100vw 750px;
   }
-  .hero-content p {
-    font-size: 140px;
-    padding-top: 34px;
-    padding-bottom: 37px;
-    line-height: 70px;
-  }
-
-  .hero-content i {
-    line-height: 25px;
-    font-size: 60px;
-
-  }
+  
   svg {
     width: 515px;
   }
@@ -433,18 +392,7 @@
     background-size: 100vw 900px;
   }
 
-  .hero-content p {
-
-    font-size: 160px;
-    padding-top: 40px;
-    padding-bottom: 43px;
-    line-height: 70px;
-  }
-
-  .hero-content i {
-    line-height: 30px;
-    font-size: 70px;
-  }
+  
   svg{
     width: 565px;
   }

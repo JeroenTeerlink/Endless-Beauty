@@ -232,7 +232,7 @@ a.hovered {
     justify-content: center;
     align-items: center;
   }
-  a {
+  .mobile-menu-items a {
     color: white !important;
   }
   .mobile-menu-items li {
