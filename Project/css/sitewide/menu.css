@@ -72,7 +72,7 @@ a.hovered {
 }
 .drop-menu {
 	width: 100%;
-	background-color: #BD7E7F;
+	background-color: #FCD2C0;
 	position: absolute;
     right: 0;
     transform: translateX(-100%);
@@ -84,17 +84,12 @@ a.hovered {
 	transform: translateX(0px);
 }
 .drop-menu a {
-	color: white;
-	font-size: 14px;
-	display: block;
+  font-family: Helvetica;
+	color: #333;
+	font-size: 24px;
 	height: inherit;
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
 	font-weight: 200;
-  text-align: center;
 }
 .drop-menu a:hover {
 	border: 1px solid white;
@@ -111,7 +106,7 @@ a.hovered {
  */
 #burger-wrap {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 25px;
   margin: 0;
@@ -121,7 +116,7 @@ a.hovered {
 }
 .burger {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 25px;
   overflow: hidden;
@@ -208,7 +203,7 @@ a.hovered {
 /* responsive part of menu */
 @media (max-width: 48em) {
   nav {
-    height: 50px;
+    height: 0px;
   }
   .menu-top {
     padding-top: 0;
@@ -326,22 +321,6 @@ a.hovered {
 	}
 	.menu-header .hor > li {
 	display: inline-block;
-	}
-	.drop-menu {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.drop-menu li {
-		flex: 0 0 25%;
-		height: 110px;
-		box-sizing: border-box;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.drop-menu li:nth-child(1),.drop-menu li:nth-child(3),.drop-menu li:nth-child(6),.drop-menu li:nth-child(8) {
-		background-color: steelblue;
 	}
 
 	.burger-wrap, .burger, .mobile-menu {
