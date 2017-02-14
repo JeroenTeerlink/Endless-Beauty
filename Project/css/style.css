@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', serif;
   list-style: none;
   text-decoration: none;
   background-color: #FFF;
@@ -155,7 +155,7 @@ header p {
 .title  > p {
   font-size: 24px;
   margin-top: 10px;
-  color: hotpink;
+  color: #944DA1;
   text-align: center;
   font-family: Helvetica;
   position: relative;
@@ -165,7 +165,7 @@ header p {
 	height: 28px;
 	width: 28px;
 	border-radius: 50%;
-	border: 2px solid hotpink;
+	border: 2px solid #944DA1;
 	margin: 15px auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -184,7 +184,7 @@ header p {
   z-index: 1;
 }
 #circle .fa-angle-down {
-	color: hotpink;
+	color: #944DA1;
 	font-size: 24px;
 	font-weight: light;
 }
@@ -326,14 +326,13 @@ header p {
   line-height: 56px;
 }
 .card-category {
-  font-family: "Jaapokki", sans-serif;
   border-bottom: 1px solid black;
   display: inline-block;
   font-size: 16px;
   margin: 25px 0px 10px 15px;
 }
 .work-card p {
-  font-family: "PT Serif", serif;
+  font-family: "Roboto", serif;
   padding-left: 15px;
   padding-right: 25px;
   margin: 30px 0px;
@@ -361,6 +360,9 @@ header p {
 }
 #card-1 .image-section {
   overflow: hidden;
+}
+#card-1 h1, #card-2 h1 {
+  text-align: left;
 }
 #card-2 .image-section {
   overflow: hidden;

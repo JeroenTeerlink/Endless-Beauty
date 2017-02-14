@@ -3,7 +3,13 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
-
+.container {
+  /*background: url("../images/Roses.jpg");*/
+  background-color: rgba(250,200,200,.5);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: cover;
+}
 h1, h2, h3, h4, p, a, div {
 	margin: 0;
 	padding: 0;
@@ -22,7 +28,7 @@ h1, h2, h3, h4, p, a, div {
 	z-index: 2;
 	background-color: white;
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 #sub-header h1 {
 	font-family: "Didot", serif;
@@ -33,14 +39,14 @@ h1, h2, h3, h4, p, a, div {
 #sub-header p {
 	font-size: 24px;
 	font-weight: 200;
-	color: #3C96FF;
+	color: #944DA1;
 	padding-bottom: 5px;
 }
 #circle {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	border: 2px solid #3C96FF;
+	border: 2px solid #944DA1;
 	margin: 8px auto;
 	display: flex;
 	justify-content: center;
@@ -49,7 +55,7 @@ h1, h2, h3, h4, p, a, div {
 	animation-direction: alternate;
 }
 .container .fa-angle-down {
-	color: #3C96FF;
+	color: #944DA1;
 	font-size: 24px;
 	font-weight: light;
 }
@@ -59,34 +65,103 @@ h1, h2, h3, h4, p, a, div {
 }
 
 /* Einde sub-header */
-.lijst-item:nth-child(even) {
-	flex-direction: row-reverse;
-	background: white;
+
+#tab-container {
+  display: flex;
+  align-items: center;
 }
-.lijst-item:last-child {
-	border-bottom: none;
+#tab-group {
+  margin: 5em auto;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 48em;
 }
-.lijst-item {
-	height: 300px;
-	width: 100%;
-	background: #F0F2F2;
-	display: flex;
-	align-items: center;
-	/* border-bottom: 1px black dashed; */
+.tab {
+  position: relative;
+  width: 100%;
+}
+.price {
+  float: right;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-top: 4px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: lightgreen;
+  vertical-align: center;
+  color: white;
+}
+.tab:nth-child(2n) label {
+  background: #F0F2F2;
+}
+.tab input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.tab label {
+  background: white;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding: .5em;
+  transition: letter-spacing .55s;
+}
+.tab:first-child label {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tab:last-child label {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tab input:focus + label, .tab label:hover {
+  background-color: #A14DA1;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  display: flex;
+  justify-content: flex-start;
+  background: white;
+}
+.tab-content .tab-text {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.tab-text a {
+  margin-top: .5em;
+  padding: 8px 10px;
+  background-color: lightgreen;
+  color: white;
+  border-radius: 3px;
+  display: inline-table;
+  transition: all .3s;
+}
+.tab-text a:hover {
+  background-color: #80DD80;
+}
+.tab input:checked ~ .tab-content {
+  max-height: 16.25em;
 }
 .item-foto {
-	opacity: 0;
-	height: 330px;
-	width: 330px;
-	border-radius: 50%;
-	background-size: cover !important;
-	background-position: center !important;
-	z-index: 3;
-}
-#wedding-item .item-foto {
-	opacity: 1 !important;
+  height: inherit;
+  flex: 0 0 35%;
 	background: url("https://static.pexels.com/photos/247295/pexels-photo-247295.jpeg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0s;
 }
+/*
 #wimper-item .item-foto {
 	background: url("https://static.pexels.com/photos/46279/brown-brown-eyes-iris-gene-46279.jpeg");
 }
@@ -107,22 +182,11 @@ h1, h2, h3, h4, p, a, div {
 }
 #gezondheid-item .item-foto {
 	background: url("../images/receiver3.jpg");
-}
+}*/
 
-.item-text {
-	text-align: center;
-	margin: 0 auto;
-}
-.item-text h2 {
-	font-size: 56px;
-	letter-spacing: .0525em;
-}
-.item-text p {
-	font-size: 1.1em;
-}
 #final {
-	background: #F0F2F2;
-	padding-top: 30px;
+	/*background: #F0F2F2;*/
+	padding-bottom: 2em;
 	text-align: center;
 }
 .triangle-down {
@@ -130,10 +194,10 @@ h1, h2, h3, h4, p, a, div {
   height: 0;
   border-left: 89px solid transparent;
   border-right: 89px solid transparent;
-  border-top: 50px solid white;
+  border-top: 50px solid #FFF;
   margin: 0 auto;
 }
-.scroll-top-button {
+/*.scroll-top-button {
   color: steelblue;
   border: 2px solid steelblue;
   border-radius: 3px;
@@ -146,13 +210,36 @@ h1, h2, h3, h4, p, a, div {
 .scroll-top-button:hover {
   background: steelblue;
   color: white;
+}*/
+@media (max-width:35.5em) {
+  #final {
+    padding-top: 2em;
+  }
+  #sub-header {
+    height: auto;
+    padding-top: 80px;
+  }
+  #circle {
+    animation-play-state: paused;
+  }
+  #tab-group {
+    margin: 0;
+  }
+  .tab label {
+    font-size: .9em;
+  }
+  .tab-content {
+    flex-direction: column;
+  }
+  .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+  }
+  .item-foto {
+    height: 200px;
+  }
 }
-.link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0;
+@media (max-width:64em) {
+  #tab-container img {
+    display: none;
+  }
 }

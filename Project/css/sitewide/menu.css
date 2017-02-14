@@ -2,7 +2,7 @@
 * {
   list-style: none;
   text-decoration: none;
-  font-family: 'Avenir', serif;
+  font-family: 'Roboto', sans-serif;
 }
 html, body {
   list-style: none;
@@ -18,10 +18,15 @@ nav {
   position: relative;
 }
 
-#logo {
-  display: block;
+header > img {
+  position: absolute;
+  right: 20px;
+  top: 420px;
+  height: 300px;
+  width: 550px;
+  z-index: 0;
+  transform: rotate(20deg);
 }
-
 .menu-header .fa {
   font-size: 20px;
 }
@@ -39,13 +44,12 @@ nav {
 }
 
 .menu-header a {
-  font-family: "Century Gothic";
+  font-family: "Roboto";
   text-decoration: none;
   color: #3f3f3f;
-  font-weight: 100;
   opacity: 1;
   font-size: 14px;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 .menu-header a:hover {
   color: #BD7E7F;
@@ -70,40 +74,17 @@ a.hovered {
   margin-right:0;
   padding-bottom:10px;
 }
-.drop-menu {
-	width: 100%;
-	background-color: #FCD2C0;
-	position: absolute;
-    right: 0;
-    transform: translateX(-100%);
-    margin: 0;
-    z-index: 2;
-    transition: all .3s ease-in-out;
-}
-.show {
-	transform: translateX(0px);
-}
-.drop-menu a {
-  font-family: Helvetica;
-	color: #333;
-	font-size: 24px;
-	height: inherit;
-	width: 100%;
-	font-weight: 200;
-}
-.drop-menu a:hover {
-	border: 1px solid white;
-}/*
+
 
 .open {
   position: fixed;
-  background: #39D;
+  background-color: rgba(0,0,0,00);
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
 }
- */
+
 #burger-wrap {
   display: none;
   position: fixed;
@@ -138,7 +119,7 @@ a.hovered {
   left: 16px;
   right: 16px;
   height: 3px;
-  background: #333;
+  background: #944DA1;
   border-radius: 15px;
   -webkit-transition: background 0.3s .3s;
   transition: background 0.3s .3s;
@@ -162,7 +143,7 @@ a.hovered {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #333;
+  background-color: #944DA1;
   content: "";
 	border-radius: 5px;
   -webkit-transition-duration: .3s,.3s;
@@ -208,10 +189,7 @@ a.hovered {
   .menu-top {
     padding-top: 0;
   }
-  #logo {
-    display: none;
-  }
-  .menu-top ul {
+  .menu-top {
     display: none;
   }
   .menu-header {
@@ -234,6 +212,7 @@ a.hovered {
     padding: 10px 0;
     display: block;
     font-size: 30px;
+    font-weight: 100;
   }
   .mobile-menu .social-icons {
     display: flex;
@@ -253,6 +232,19 @@ a.hovered {
   a.hovered:after {
     display: none;
   }
+  .mobile-menu-top {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-menu-top #logo {
+    height: 80px;
+  }
+  .mobile-menu-top h2 {
+    color: white;
+    padding-left: 10px;
+  }
+  .
 }
 /* >= 0 XS */
 @media screen and (min-width:0) {
@@ -282,7 +274,6 @@ a.hovered {
 /* >= 568 SM */
 @media screen and (min-width:35.5em) {
   #logo {
-    width: 235px;
     height: 80px;
     margin: 0 auto;
   }
@@ -290,11 +281,23 @@ a.hovered {
 
 /* >= 768 MD */
 @media screen and (min-width:48em) {
-	.menu {
+	nav {
 	height: auto;
 	}
+  #logo {
+    display: block;
+  }
   .menu-top {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-top h2 {
+    font-size: 2em;
+    padding: 0 10px;
+    padding-top: 15px;
+    line-height: 1;
   }
 	#drop-arrow {
 	display: inherit;
@@ -326,12 +329,11 @@ a.hovered {
 	.burger-wrap, .burger, .mobile-menu {
 		display: none;
 	}
-	.social-icons {
+}
+@media screen and (min-width:55em) {
+  .social-icons {
   	display: flex;
   }
-}
-@media screen and (max-width:55em) {
-
 }
 /* >= 1280 XL */
 @media screen and (min-width:80em) {
