@@ -4,11 +4,11 @@ html, body {
   overflow-x: hidden;
 }
 .container {
-  /*background: url("../images/Roses.jpg");*/
-  background-color: rgba(250,200,200,.5);
+  /*background: url("http://previews.123rf.com/images/malkani/malkani1211/malkani121100017/16153826-Silver-seamless-metal-background-Stock-Vector-texture.jpg");*/
+  background-color: rgba(235,235,235,0.8);
   background-blend-mode: lighten;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 h1, h2, h3, h4, p, a, div {
 	margin: 0;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, p, a, div {
   margin: 5em auto;
   margin-bottom: 2em;
   width: 100%;
-  max-width: 48em;
+  max-width: 54em;
 }
 .tab {
   position: relative;
@@ -233,6 +233,7 @@ h1, h2, h3, h4, p, a, div {
   }
   .tab input:checked ~ .tab-content {
     max-height: 100vh;
+    margin: 0;
   }
   .item-foto {
     height: 200px;

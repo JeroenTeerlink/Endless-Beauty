@@ -15,6 +15,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
       width: 100%;
+  background: #F0F3F3;
 }
 footer ul {
   display: -webkit-box;

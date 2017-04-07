@@ -154,8 +154,8 @@ h1, p, h2, a, h3 {
 }
 .review a, #sub-header a {
   font-family: "Roboto", sans-serif;
-  color: #BB878A;
-  border: 2px solid #BB878A;
+  color: #944DA1;
+  border: 2px solid #944DA1;
   border-radius: 3px;
   padding: 6px 20px;
   margin: 10px 30px 15px;
@@ -163,7 +163,7 @@ h1, p, h2, a, h3 {
   transition: all 0.3s ease-in-out;
 }
 .review a:hover, #sub-header a:hover {
-  background-color: #BB878A;
+  background-color: #944DA1;
   color: white;
 }
 
@@ -204,7 +204,7 @@ h1, p, h2, a, h3 {
   text-transform: uppercase;
   white-space: normal;
   width: auto;
-  color: #BB878A;
+  color: #944DA1;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -311,14 +311,14 @@ a.mijn-verhaal-cta:hover {
 .fa-caret-right {
   font-size: 1.6em;
   padding-left: 10px;
-  color: #BB878A !important;
+  color: #944DA1 !important;
 }
 .fa-th {
   font-size: 150px;
   display: block;
   text-align: center;
   padding-top: 20px;
-  color: #BB878A;
+  color: #944DA1;
 }
 #write-reviews {
   margin: 0 auto;
@@ -425,8 +425,8 @@ label {
 
 .scroll-top-button {
   font-family: "Roboto", sans-serif;
-  color: #BB878A;
-  border: 2px solid #BB878A;
+  color: #944DA1;
+  border: 2px solid #944DA1;
   border-radius: 3px;
   padding: 8px 18px;
   margin: 0 auto;
@@ -435,7 +435,7 @@ label {
   background: rgba(255,255,255,0.1);
 }
 .scroll-top-button:hover {
-  background: #BB878A;
+  background: #944DA1;
   color: white;
 }
 .link {

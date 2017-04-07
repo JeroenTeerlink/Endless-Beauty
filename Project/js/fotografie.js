@@ -9,7 +9,7 @@ function checkIfAnimationShouldPlay() {
 $(window).scroll(function() {
 	s = $(window).scrollTop();
 	console.log(s);
-	
+
 	// $(".gallery-row").css("left", s+"px");
 	if (s <= 1050 && $(window).width() > 800) {
 		galleryScroll();

@@ -66,7 +66,7 @@ h1, h2, h3, h4, p, a, div {
 @keyframes up-down {
 	0% { transform: translateY(0) }
 	100% { transform: translateY(25px) }
-}	
+}
 
 .slope-effect {
 	transform: skewY(-2deg);
@@ -199,24 +199,43 @@ h1, h2, h3, h4, p, a, div {
 	padding-bottom: 60px;
 }
 #body h1 {
-	font-size: 38px;
+	font-size: 63px;
 	height: auto;
-	flex: 0 0 46%;
+	flex: 0 0 100%;
 	margin: 0 2%;
 	padding-bottom: 60px;
 }
 #body p {
-	flex: 0 0 46%;
+	flex: 0 0 52%;
 	font-size: 16px;
-	margin: 0 2%;
-	padding-bottom: 30px;
+	margin: 0 2% 4%;
+	padding-bottom: 0px;
+  max-width: 600px;
 }
-#body img {
-	width: 50%;
-	height: 50%;
+#cta {
+  position: relative;
+  top: 30px;
+  padding: 10px 12px;
+  background-color: lightgreen;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+#cta:hover {
+  background-color: rgb(0,230,100);
+}
+.image {
+  flex: 0 0 40%;
+  background-image: url("../images/Carla.jpg");
+  background-size: cover;
+  background-position: center;
+	max-width: 600px;
+  margin: 0 2% 4%;
 }
 @media (max-width: 800px) {
 	#sub-header {
+    margin-top: 70px;
 		height: 180px;
 	}
 	#circle {

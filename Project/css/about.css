@@ -37,14 +37,14 @@ h1, h2, h3, h4, p, a, div {
 #sub-header p {
 	font-size: 22px;
 	font-weight: 200;
-	color: #6E6D85;
+	color: #944DA1;
 	padding-bottom: 5px;
 }
 #circle {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	border: 2px solid #6E6D85;
+	border: 2px solid #944DA1;
 	margin: 8px auto;
 	display: flex;
 	justify-content: center;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, p, a, div {
 	animation-direction: alternate;
 }
 .container .fa-angle-down {
-	color: #6E6D85;
+	color: #944DA1;
 	font-size: 24px;
 	font-weight: light;
 }
@@ -165,7 +165,7 @@ section p {
 }
 
 section h2 {
-  
+
   font-weight: 100;
   margin-top: 15px;
   font-size: 3em;
@@ -386,7 +386,7 @@ section h2 {
 }
 .two-column-story h3 {
   margin-top: 0;
-  
+
   font-weight: 900;
   font-size: 1.3em;
   color: #444;

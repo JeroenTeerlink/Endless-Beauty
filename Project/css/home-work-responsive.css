@@ -31,10 +31,12 @@
   #card-1 {
     width: 100%;
     height: auto;
-    margin: -20px 0 0 0;
   }
   #card-1 .image-section {
-    height: 349px;
+    height: 300px;
+  }
+  .text-section a {
+    position: static;
   }
   #card-1 img {
     width: 100%;

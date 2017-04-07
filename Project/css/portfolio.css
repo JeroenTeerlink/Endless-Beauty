@@ -33,14 +33,14 @@ h1, h2, h3, h4, p, a, div {
 #sub-header p {
 	font-size: 24px;
 	font-weight: 200;
-	color: #3C96FF;
+	color: #944DA1;
 	padding-bottom: 5px;
 }
 #circle {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	border: 2px solid #3C96FF;
+	border: 2px solid #944DA1;
 	margin: 8px auto;
 	display: flex;
 	justify-content: center;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, p, a, div {
 	animation-direction: alternate;
 }
 .container .fa-angle-down {
-	color: #3C96FF;
+	color: #944DA1;
 	font-size: 24px;
 	font-weight: light;
 }
@@ -144,9 +144,8 @@ section p {
   background-size: cover !important;
 }
 #in-between {
-  background: url("../images/Roses.jpg");
   background-position: bottom;
-  background-color: rgba(255,255,255,0.85);
+  background-color: #F0F2F2;
   background-blend-mode: color-burn;
   text-align: center;
   display: -webkit-box;
@@ -172,7 +171,10 @@ section p {
   line-height: 1.5em;
 }
 #gallery-wrapper {
-  background-image: linear-gradient(#F0F2F2, #E8E8EE);
+  background-image: url("../images/Roses.jpg");
+  background-position: bottom;
+  background-color: rgba(255,255,255,0.95);
+  background-blend-mode: color-burn;
 }
 #portfolio-gallery {
   padding-top: 100px;
@@ -212,6 +214,9 @@ section p {
   }
 }
 @media (max-width: 750px) {
+  #sub-header {
+    margin-top: 70px;
+  }
   .thumbnail {
     width: 50%;
   }
