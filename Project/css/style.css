@@ -364,6 +364,9 @@ header p {
 #card-1 h1, #card-2 h1 {
   text-align: left;
 }
+#card-2 p {
+    margin: 30px 0 14px;
+}
 #card-2 .image-section {
   overflow: hidden;
 }

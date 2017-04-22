@@ -138,7 +138,7 @@ section p {
       -ms-flex-align: center;
           align-items: center;
   height: 300px;
-  background-color: #F1EFDF;
+  background-color: #F9F0EB;
 }
 .profile-pic {
   background-image: url("../images/CarlaSmall.jpg");
@@ -187,7 +187,7 @@ section h2 {
 }
 
 #mijn-verhaal-wrapper {
-  background-color: #F1EFDF;
+  background-color: #F9F0EB;
 }
 .title {
   text-align: center;
@@ -268,7 +268,7 @@ section h2 {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center 35%;
-  background-color: tomato;
+  background-color: #944DA1;
 }
 
 @-webkit-keyframes pump {
@@ -346,7 +346,7 @@ section h2 {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-color: #F1EFDF;
+  background-color: #F9F0EB;
   padding: 30px 0;
 }
 .two-column-column {
@@ -400,9 +400,10 @@ section h2 {
   line-height: 1.125rem;
   position: relative;
   text-transform: uppercase;
+  text-align: center;
   white-space: normal;
   width: auto;
-  color: tomato;
+  color: #944DA1;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
@@ -477,7 +478,7 @@ a.mijn-verhaal-cta:hover {
 .fa-caret-right {
   font-size: 1.6em;
   padding-left: 15px;
-  color: tomato !important;
+  color: #944DA1 !important;
 }
 .two-column-image {
   margin: 0 1% 0 0;
@@ -552,8 +553,8 @@ a.mijn-verhaal-cta:hover {
 }
 
 .scroll-top-button {
-  color: tomato;
-  border: 2px solid tomato;
+  color: #944DA1;
+  border: 2px solid #944DA1;
   border-radius: 3px;
   padding: 8px 18px;
   margin: 0 auto;
@@ -562,7 +563,7 @@ a.mijn-verhaal-cta:hover {
   background: none;
 }
 .scroll-top-button:hover {
-  background: tomato;
+  background: #944DA1;
   color: white;
 }
 .link {

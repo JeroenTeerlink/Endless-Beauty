@@ -82,7 +82,7 @@ h1, h2, h3, h4, p, a, div {
 }
 .price {
   float: right;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.25;
   margin-top: 4px;
   padding: 5px 10px;
@@ -138,6 +138,16 @@ h1, h2, h3, h4, p, a, div {
   display: flex;
   flex-direction: column;
 }
+.tab-text {
+    width: 100%;
+}
+.tab-text li {
+    list-style-type: disc;
+    line-height: 1.125em;
+}
+.tab-text li span {
+    float: right;
+}
 .tab-text a {
   margin-top: .5em;
   padding: 8px 10px;
@@ -151,7 +161,7 @@ h1, h2, h3, h4, p, a, div {
   background-color: #80DD80;
 }
 .tab input:checked ~ .tab-content {
-  max-height: 16.25em;
+  max-height: 36.25em;
 }
 .item-foto {
   height: inherit;
@@ -242,5 +252,8 @@ h1, h2, h3, h4, p, a, div {
 @media (max-width:64em) {
   #tab-container img {
     display: none;
+  }
+  .tab-text {
+      max-width: 95%;
   }
 }

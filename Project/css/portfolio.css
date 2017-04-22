@@ -68,6 +68,7 @@ section p {
   color: #39AAFA;
   font-weight: 500;
   max-width: 800px;
+  font-family: "AdobeCaslonW01-Regular",serif;
 }
 
 @media screen and (min-width: 880px) {
@@ -144,9 +145,10 @@ section p {
   background-size: cover !important;
 }
 #in-between {
-  background-position: bottom;
-  background-color: #F0F2F2;
-  background-blend-mode: color-burn;
+    background-image: url("../images/Roses.jpg");
+    background-position: bottom;
+    background-color: rgba(255,255,255,0.90);
+    background-blend-mode: color-burn;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,21 +162,18 @@ section p {
           align-items: center;
 }
 #in-between h2 {
-  color: #f36f95;
+  color: #333;
   font-weight: 800;
   margin-bottom: 20px;
 }
 #in-between p {
-  font-size: 1em;
   color: #333;
   padding-bottom: 30px;
-  line-height: 1.5em;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }
 #gallery-wrapper {
-  background-image: url("../images/Roses.jpg");
-  background-position: bottom;
-  background-color: rgba(255,255,255,0.95);
-  background-blend-mode: color-burn;
+    background: linear-gradient(#FFF,#F2F2F4);
 }
 #portfolio-gallery {
   padding-top: 100px;
